@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sotero v2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+
+<body class="container">
+    <div class="navbar">
+        <div class="profile">
+            <img class="profile__icon" src="../img/profile_pic.png" alt="">
+            <span class="profile__user-name">Ranaflex Gondolin</span>
+        </div>
+
+        <ul class="navbar-links">
+            <a href="#" class="navbar-button">Ficha A</a>
+            <a href="#" class="navbar-button">Ficha B</a>
+            <a href="#" class="navbar-button">Ficha C</a>
+        </ul>
+    </div>
+    <div class="content">
+        <!-- Formulario info personal-->
+        <div class="info-personal">
+            <h2 class="info-personal__title">Datos Personales</h2>
+            <form class="info-personal__form">
+                <!--  FechaIngresoRutDeLaMadreFechaDeIngresoDeLaMadre-->
+                <span class="info-personal__form__item">
+                    <label for="fechingre">Fecha Ingreso</label>
+                    <input type="date" name="fechingre" id="fechingre">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="rut-madre">Rut de la Madre</label>
+                    <input type="text" name="rut-madre" id="rut">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="fnacmadre">Fecha de nac. madre</label>
+                    <input type="date" name="fnacmadre" id="fnacmadre">
+                </span>
+
+                <!--PrimerNombreApellidoPaternoMaterno-->
+
+                <span class="info-personal__form__item">
+                    <label for="pNombre">Primer nombre</label>
+                    <input type="text" name="pNombre" id="pNombre">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="aPaterno">Apellido Paterno</label>
+                    <input type="text" name="aPaterno" id="aPaterno">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="aMaterno">Apellido Materno</label>
+                    <input type="text" name="aMaterno" id="aMaterno">
+                </span>
+
+                <!-- DomicilioNumeroDeptoOCasa-->
+
+                <span class="info-personal__form__item">
+                    <label for="direccion">Direccion</label>
+                    <input type="text" name="direccion" id="direccion">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="numeroDomicilio">Numero</label>
+                    <input type="number" name="numeroDomicilio" id="numeroDomicilio">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="numDeptoCasa">Numero depto o casa</label>
+                    <input type="text" name="numDeptoCasa" id="numDeptoCasa">
+                </span>
+
+                <!-- Poblacion/BarrioComunaTelefono  -->
+
+                <span class="info-personal__form__item">
+                    <label for="poblacion">Poblacion o Barrio</label>
+                    <input type="text" name="poblacion" id="poblacion">
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="Comuna">Comuna</label>
+                    <input type="text" name="comuna" id="comuna">
+                    <!--Para autocompletar-->
+                </span>
+                <span class="info-personal__form__item">
+                    <label for="telefono">Telefono de contacto</label>
+                    <input type="text" name="telefono" id="telefono">
+                </span>
+            </form>
+        </div>
+
+        <!-- Ficha A -->
+        <div class="ficha-a">
+            <h2 class="ficha-a__title">Ficha A</h2>
+
+            <!-- Antecedentes -->
+            <div class="ficha-a__antecedentes">
+                <form class="ficha-a__antecedentes__form">
+                    <!--Prevision-->
+                    <span class="ficha-a__antecedentes__form__item">
+                        <label for="prevision">Prevision</label>
+                        <select name="prevision">
+                            <option value="Sin Prevision">Sin Prevision</option>
+                            <option value="Fonasa A">Fonasa A</option>
+                            <option value="Fonasa B">Fonasa B</option>
+                            <option value="Fonasa C">Fonasa C</option>
+                            <option value="Fonasa D">Fonasa D</option>
+                            <option value="Isapre">Isapre</option>
+                        </select>
+                    </span>
+
+                    <!--Estudios-->
+                    <span class="ficha-a__antecedentes__form__item">
+                        <label for="estudios">Estudios</label>
+                        <select name="estudios">
+                            <option value="Sin Educacion">Sin Educacion</option>
+                            <option value="Basica">Basica</option>
+                            <option value="Media">Media</option>
+                            <option value="Tecnica">Tecnica</option>
+                            <option value="Universitaria">Universitaria</option>
+                        </select>
+                    </span>
+
+                    <!--Estado Civil-->
+                    <span class="ficha-a__antecedentes__form__item">
+                        <label for="estado-civil">Estado Civil</label>
+                        <select name="estado-civil">
+                            <option value="Casada">Casada</option>
+                            <option value="Convivente">Convivente</option>
+                            <option value="Soltera">Soltera</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </span>
+
+                    <!--Actividad principal-->
+                    <span class="ficha-a__antecedentes__form__item">
+                        <label for="ocupacion">Ocupacion</label>
+                        <select name="ocupacion">
+                            <option value="Dueña de casa">Dueña de casa</option>
+                            <option value="Estudiante">Estudiante</option>
+                            <option value="Trabajo Esporadico">Trabajo Esporadico</option>
+                            <option value="Trabajo Media Jornada">Trabajo Media Jornada</option>
+                            <option value="Trabajo Jornada Completa">Trabajo Jornada Completa</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </span>
+
+                    <!--Grupo sanguineo de la madre-->
+                    <div class="ficha-a__antecedentes__form__item">
+                        <label for="grpSangre">Grupo Sanguineo Madre</label>
+                        <select id="grpSangre">
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="A- no sensibilizada">A- no sens.</option>
+                            <option value="A- sensibilizada">A- sens.</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="B- no sensibilizada">B- no sens.</option>
+                            <option value="B- sensibilizada">B- sens.</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="O- no sensibilizada">O-no sens.</option>
+                            <option value="O- sensibilizada">O- sens. </option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="AB- no sensibilizada">AB- no sens.</option>
+                            <option value="AB- sensibilizada">AB- sens.</option>
+                            <option value="?">Desconoce</option>
+                        </select>
+                    </div>
+
+                    <!--Grupo sanguineo Conyuge-->
+                    <div class="ficha-a__antecedentes__form__item">
+                        <label for="grpSangreConyu">Grupo Sanguineo Conyuge</label>
+                        <select id="grpSangreConyu">
+                            <option value="A+">A+</option>
+                            <option value="A-">A-</option>
+                            <option value="B+">B+</option>
+                            <option value="B-">B-</option>
+                            <option value="O+">O+</option>
+                            <option value="O-">O-</option>
+                            <option value="AB+">AB+</option>
+                            <option value="AB-">AB-</option>
+                            <option value="?">Desconoce</option>
+                        </select>
+                    </div>
+
+                    <!--Peso-->
+                    <div class="ficha-a__antecedentes__form__item">
+                        <label for="peso">Peso</label>
+                        <input type="number" name="peso" placeholder="kg">
+                    </div>
+
+                    <!--Estatura-->
+                    <div class="ficha-a__antecedentes__form__item">
+                        <label for="estatura">Estatura</label>
+                        <input type="number" name="estatura" placeholder="cm">
+                    </div>
+                </form>
+            </div>
+
+            <!-- Datos Medicos -->
+            <div class="ficha-a__datos-medicos">
+                <form class="ficha-a__datos-medicos__form">
+                    <!-- Patologia Familiar-->
+                    <div class="ficha-a__datos-medicos__form__item">
+                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Familiar</label>
+                        <div class="ficha-a__datos-medicos__form__item__select">
+                            <select id="patoFam">
+                                <option value="Ninguna">Ninguna</option>
+                                <option value="Diabetes">Diabetes</option>
+                                <option value="TBC Pulmonar">TBC Pulmonar</option>
+                                <option value="Hipertensión Arterial">Hipertensión Arterial</option>
+                                <option value="Alergias">Alergias</option>
+                                <option value="Asma">Asma</option>
+                                <option value="Epilepsia">Epilepsia</option>
+                                <option value="Enfermedades Tiroiodes">Enfermedades Tiroiodes</option>
+                                <option value="Enfermedades Cardiacas">Enfermedades Cardiacas</option>
+                                <option value="Enfermedades Renal">Enfermedades Renal</option>
+                            </select>
+                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">Añadir</button>
+                        </div>
+                        <ul class="lista-pat">
+                            <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
+                        </ul>
+                    </div>
+
+                    <!-- Patologia Medica-->
+                    <div class="ficha-a__datos-medicos__form__item">
+                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Medica</label>
+                        <div class="ficha-a__datos-medicos__form__item__select">
+                            <select id="patoFam">
+                                <option value="Ninguna">Ninguna</option>
+                                <option value="Diabetes">Diabetes</option>
+                                <option value="TBC Pulmonar">TBC Pulmonar</option>
+                                <option value="Hipertensión Arterial">Hipertensión Arterial</option>
+                                <option value="Alergias">Alergias</option>
+                                <option value="Asma">Asma</option>
+                                <option value="Epilepsia">Epilepsia</option>
+                                <option value="Enfermedades Tiroiodes">Enfermedades Tiroiodes</option>
+                                <option value="Enfermedades Cardiacas">Enfermedades Cardiacas</option>
+                                <option value="Enfermedades Renal">Enfermedades Renal</option>
+                            </select>
+                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">Añadir</button>
+                        </div>
+                        <ul class="lista-pat">
+                            <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
+                        </ul>
+                    </div>
+
+                    <!-- Patologia Quirurjica-->
+                    <div class="ficha-a__datos-medicos__form__item">
+                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Quirurgica</label>
+                        <div class="ficha-a__datos-medicos__form__item__select">
+                            <select id="patoFam">
+                                <option value="Ninguna">Ninguna</option>
+                                <option value="Cono">Cono</option>
+                                <option value="Miomas">Miomas</option>
+                                <option value="Infertibilidad">Infertibilidad</option>
+                                <option value="Litiasis renal">Litiasis renal</option>
+                                <option value="Asma">Asma</option>
+                                <option value="Colelitiasis">Colelitiasis</option>
+                                <option value="Apendicectomia">Apendicectomia</option>
+                            </select>
+                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">Añadir</button>
+                        </div>
+                        <ul class="lista-pat">
+                            <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
+                        </ul>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Medicamentos y drogas -->
+            <div class="ficha-a__medDrogas">
+                <form class="ficha-a__medDrogas__form">
+                    <!--Medicamentos cronicos-->
+                    <div class="ficha-a__medDrogas__form__item">
+                        <label>Medicamentos cronicos</label>
+                        <input type="checkbox" name="rMedCronico" id="">
+                        <label for="rMedCronico">No</label>
+                        <label class="contRadioButtn">Si, Durante el 1er Trimestre <input type="checkbox"
+                                name="rMedCronico" id=""><span class="radioBtn"></span> </label>
+                        <label class="contRadioButtn">Si, Despues del 1er Trimestre <input type="checkbox"
+                                name="rMedCronico" id=""><span class="radioBtn"></span> </label>
+                        <label class="contRadioButtn">No sabe <input type="checkbox" name="rMedCronico" id=""><span
+                                class="radioBtn"></span> </label>
+                        <label for="">Otro</label>
+                        <input type="text" name="" id="Mejorar">
+                        <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar detallar los medicamentos Cronicos?-->
+                    </div>
+
+                    <!-- Cigarrilos / Alcohol -->
+                    <div class="ficha-a__medDrogas__form__item">
+                        <div class="col-25">
+
+                            <label>Cigarrilos por dia</label>
+                            <label class="contRadioButtn">No <input type="radio" name="rCigarrillo" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Ocasional<input type="radio" name="rCigarrillo" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <input type="number" name="" id="tAlcohol">
+
+                        </div>
+                        <div class="col-25">
+                            <label">Alcohol/dia(Copa vino)</label>
+
+                                <label class="contRadioButtn">No <input type="radio" name="rAlcohol" id=""><span
+                                        class="radioBtn"></span> </label>
+                                <label class="contRadioButtn">Ocasional<input type="radio" name="rAlcohol" id=""><span
+                                        class="radioBtn"></span> </label>
+                                <input type="number" name="" id="tAlcohol">
+                        </div>
+                    </div>
+
+                    <!-- Drogas -->
+                    <div class="ficha-a__medDrogas__form__item">
+                        <label>Drogas</label>
+                        <select id="drogas">
+                            <option value="Ninguna">Ninguna</option>
+                            <option value="Cocaina">Cocaina</option>
+                            <option value="Marihuana">Marihuana</option>
+                            <option value="Pasta Base">Pasta Base</option>
+                            <option value="Anfetamina">Anfetamina</option>
+                            <option value="Benzodiazepinas">Benzodiazepinas</option>
+                        </select>
+                        <label for="">Otro</label>
+                        <input type="text" name="" id="Mejorar">
+                        <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar mas patologias familiar?-->
+                        <!-- Hay que hacer que este Combo box se conecte a uina bdd para que ponga todas las patologias medicas facilmente y que haga lo de arriba igual -->
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>
