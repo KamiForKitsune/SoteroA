@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="2A7C3A3A-A083-F68C-6B34-C60DE9D731B2" name="PATOLOGIA">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>FE572B6C-DFAF-9546-97FD-28E0619FB8F8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_patologia" id="5B5A5C67-F067-A1F2-7D39-AC7333A5B6E8">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>D22C589A-B3FB-A2CB-9450-C0AEE69C5C0D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descripc_patologia" id="00153D46-BCEE-EA76-E9AD-2B1935748E13">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>C0B0796C-CE53-039C-5003-74ABFA63FFF2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_parentesco_pat" id="AAC169A2-44F2-C2EB-84C5-8D3B3BBCA16E">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>60945B2E-EB8E-2921-2C6A-EBDE5B8AF10D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A056AA8A-1993-D728-312E-E6C954C3727F" referredColumn="39272B2B-8FBA-BD3F-8351-7E5A7BBD6E5F"/>
+</associations>
+</Column>
+<Column name="id_tipo_patologia" id="90985455-1CDB-6A54-F222-FF214C4ACBFC">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>7B830A52-F460-C8EA-6418-CB71CC53B65F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17F31579-CAFC-E810-13C2-B8B50E53CD6F" referredColumn="A9DA34A2-1888-81BB-815A-93CC6BBE78B2"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EC994EBA-BCD7-2518-4E8B-AAD0D8D9C90E" name="patologia_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>27473804-D4BE-A0DD-2B6F-D669CED7AFB9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5B5A5C67-F067-A1F2-7D39-AC7333A5B6E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2F941E41-4314-8385-8C74-A191CEB4F9A7" name="parentesco_pat_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AAC169A2-44F2-C2EB-84C5-8D3B3BBCA16E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="741CA79F-9120-C8D2-B6C6-CBA2F1192647" name="tipo_patologia_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90985455-1CDB-6A54-F222-FF214C4ACBFC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

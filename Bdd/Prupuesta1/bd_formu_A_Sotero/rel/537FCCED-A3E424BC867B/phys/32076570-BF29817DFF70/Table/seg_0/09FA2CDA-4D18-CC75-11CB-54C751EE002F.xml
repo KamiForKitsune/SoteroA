@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="GRUPO_SANGUINEO" directorySegmentName="seg_0" id="09FA2CDA-4D18-CC75-11CB-54C751EE002F">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="descrip_grupo" id="A6171A29-60BC-7F2D-60EC-B8C2BB8986A5">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_grupo" id="F1A519EC-EB17-B30B-E9AC-A51B5E7789A2">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="grupo_sanguineo_pk" id="3D8EA8E4-832D-8CF8-EDDB-08B409E8BC94">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C01482E0-BB64-52FF-FB27-7F9C0D07FC52" containerWithKeyObject="32A42D34-7C53-4296-3685-BABAE27FB318" localFKIndex="3F5D9EB1-E0CC-F9AE-1115-A3E4B8954AC4" name="region_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>A56BC51F-87C1-77C9-CAED-D3130A80CF6F</importedID>
+<referredTableLongName>REGION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2DD165FE-F8D4-B7F5-AEE5-62D7BE6379C8</referredTableID>
+<keyObject>432CBC3D-A9BB-A0C4-8F9E-378927C75E41</keyObject>
+<referredKeyID>432CBC3D-A9BB-A0C4-8F9E-378927C75E41</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_region</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

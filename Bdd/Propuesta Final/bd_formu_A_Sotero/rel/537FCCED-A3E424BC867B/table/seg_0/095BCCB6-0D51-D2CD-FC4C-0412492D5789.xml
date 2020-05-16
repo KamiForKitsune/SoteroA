@@ -1,0 +1,54 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="095BCCB6-0D51-D2CD-FC4C-0412492D5789" name="DROGA">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>815764D2-FD62-207F-3F92-D089749B3A5B</importedID>
+<ordsAlias>drogas</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_droga" id="F0205508-6DB9-AD49-400D-4F292BDE7849">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>51FB19FD-050C-1AE7-A1A9-11BDC92F607B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descrip_droga" id="D8DCF26F-7EF1-F9E7-A58A-D831287FBEDF">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>6E202F98-7CF7-9532-0BCB-AD91C59889F5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8D4BD37D-0708-D082-932E-B754E0FA3151" name="droga_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>2E2D7776-0EC1-EAAE-EF21-04FDECCDB86D</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F0205508-6DB9-AD49-400D-4F292BDE7849"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

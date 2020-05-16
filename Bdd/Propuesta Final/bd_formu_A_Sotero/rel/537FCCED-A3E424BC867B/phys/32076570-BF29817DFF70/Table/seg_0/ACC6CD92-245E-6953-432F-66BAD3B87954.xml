@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CAUSA_PARTO" directorySegmentName="seg_0" id="ACC6CD92-245E-6953-432F-66BAD3B87954">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:45:18 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_parto" id="542F9475-282E-C4AC-DBE5-8A51087636AA">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:02 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="otra" id="6ECFC5AD-6F9E-B720-1C14-0FC8E5DDDE99">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:48 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descrip_parto" id="E01E6520-3579-0DB1-E208-CA41539C8A72">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:31 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CAUSA_PARTO_PK" id="177191C6-9BD7-342E-0584-513BBFFE3E32">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:02 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

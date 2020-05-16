@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en-es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- Mira esto em... esto..Si quieres no lo toques-->
+    <div class="sidebarNavFicha">
+        <a href="#" id="primera">Ficha A</a>
+        <a href="#" id="segunda">Ficha B</a>
+        <a href="#" id="tercera">Ficha C</a>
+
+    </div>
+    <div class="contenedorFichal">
+        <!--  FechaIngresoRutDeLaMadreFechaDeIngresoDeLaMadre-->
+        <form class="contEnLinea">
+            <span style="display:inline-block">
+                <label for="fechingre">Fecha Ingreso</label>
+                <input type="date" name="fechingre" id="fechingre">
+            </span>
+            <span style="display:inline-block">
+                <label for="rut">Rut de la Madre</label>
+                <input type="number" name="rut" id="rut">
+            </span>
+            <span style="display:inline-block">
+                <label for="fnacmadre">Fecha de nacimiento de la madre</label>
+                <input type="date" name="fnacmadre" id="fnacmadre">
+            </span>
+        </form>
+        <!--PrimerNombreApellidoPaternoMaterno-->
+        <form class="contEnLinea">
+            <span style="display:inline-block">
+                <label for="pNombre">Primer nombre</label>
+                <input type="text" name="pNombre" id="pNombre">
+            </span>
+            <span style="display:inline-block">
+                <label for="aPaterno">Apellido Paterno</label>
+                <input type="text" name="aPaterno" id="aPaterno">
+            </span>
+            <span style="display:inline-block">
+                <label for="aMaterno">Apellido Materno</label>
+                <input type="text" name="aMaterno" id="aMaterno">
+            </span>
+        </form>
+        <!-- DomicilioNumeroDeptoOCasa-->
+        <form class="contEnLinea">
+            <span style="display:inline-block">
+                <label for="direccion">Direccion</label>
+                <input type="text" name="direccion" id="direccion">
+            </span>
+            <span style="display:inline-block">
+                <label for="numeroDomicilio">Numero</label>
+                <input type="number" name="numeroDomicilio" id="numeroDomicilio">
+            </span>
+            <span style="display:inline-block">
+                <label for="numDeptoCasa">Numero depto o casa</label>
+                <input type="text" name="numDeptoCasa" id="numDeptoCasa">
+            </span>
+        </form>
+        <!-- Poblacion/BarrioComunaTelefono  -->
+        <form class="contEnLinea">
+            <span style="display:inline-block">
+                <label for="poblacion">Poblacion o Barrio</label>
+                <input type="text" name="poblacion" id="poblacion">
+            </span>
+            <span style="display:inline-block">
+                <label for="Comuna">Comuna</label>
+                <input type="text" name="comuna" id="comuna">
+                <!--Para autocompletar-->
+            </span>
+            <span style="display:inline-block">
+                <label for="telefono">Telefono de contacto</label>
+                <input type="text" name="telefono" id="telefono">
+            </span>
+        </form>
+    </div>
+    <!--Consultorio de origen y antecedentes Socioeconomicos- Grupo sanguineo y estado nutricional-->
+    <div class="row">
+        <!--<label style="position: absolute; padding-left: 140px;">Consultorio : <input type="text" name="" id=""> </label>-->
+        <div class="col-50">
+            <div class="contSecciones">
+                <form action="">
+                    <div class="row">
+                        <!--Prevision Columnitisisima-->
+                        <div class="col-10">
+                            <label style="padding-left: 55px;">Prevision</label>
+                            <label class="contRadioButtn">Fonasa A <input type="radio" name="rPrevision" id=""
+                                    checked="checked"><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Fonasa B <input type="radio" name="rPrevision" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Fonasa C <input type="radio" name="rPrevision" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Fonasa D <input type="radio" name="rPrevision" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Isapre <input type="radio" name="rPrevision" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Sin previsión <input type="radio" name="rPrevision"
+                                    id=""><span class="radioBtn"></span> </label>
+                        </div>
+                        <!--Estudios-->
+                        <div class="col-10">
+                            <label style="padding-left: 55px;">Estudios</label>
+                            <label class="contRadioButtn">La calle es la universidad de la vida <input type="radio"
+                                    name="rEstudio" id="" checked="checked"><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Basica <input type="radio" name="rEstudio" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Media <input type="radio" name="rEstudio" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Tecnica<input type="radio" name="rEstudio" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Universitaria<input type="radio" name="rEstudio" id=""><span
+                                    class="radioBtn"></span> </label>
+                        </div>
+                        <!--Estado Civil-->
+                        <div class="col-10">
+                            <label style="padding-left: 55px;">Estado Civil</label>
+                            <label class="contRadioButtn">Casada <input type="radio" name="rEstadoCiv" id=""
+                                    checked="checked"><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Conviviente <input type="radio" name="rEstadoCiv" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Soltera <input type="radio" name="rEstadoCiv" id=""><span
+                                    class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Otro<input type="radio" name="rEstadoCiv" id=""><span
+                                    class="radioBtn"></span> </label>
+                        </div>
+                        <!--Actividad principal-->
+                        <div class="col-10">
+                            <label style="padding-left: 55px;">Ninguna</label>
+                            <label class="contRadioButtn">Dueña de casa <input type="radio" name="rActPrincipal" id=""
+                                    checked="checked"><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Estudiante <input type="radio" name="rActPrincipal"
+                                    id=""><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Trabajo Esporadico <input type="radio" name="rActPrincipal"
+                                    id=""><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Trabajo Media jornada<input type="radio" name="rActPrincipal"
+                                    id=""><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Trabajo jornada completa<input type="radio"
+                                    name="rActPrincipal" id=""><span class="radioBtn"></span> </label>
+                            <label class="contRadioButtn">Otro<input type="radio" name="rActPrincipal" id=""><span
+                                    class="radioBtn"></span> </label>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+        <!--Contenedor de grupo sanguineo-->
+        <div class="contSecciones">
+            <div class="col-25">
+                <!--Grupo sanguineo de la madre-->
+                <div class="col-10">
+                    <label for="grpSangre">Grupo Sanguineo Madre</label>
+                    <select id="grpSangre">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="A- no sensibilizada">A- no sens.</option>
+                        <option value="A- sensibilizada">A- sens.</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="B- no sensibilizada">B- no sens.</option>
+                        <option value="B- sensibilizada">B- sens.</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="O- no sensibilizada">O-no sens.</option>
+                        <option value="O- sensibilizada">O- sens. </option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="AB- no sensibilizada">AB- no sens.</option>
+                        <option value="AB- sensibilizada">AB- sens.</option>
+                        <option value="?">Desconoce</option>
+                    </select>
+                </div>
+                <!--Grupo sanguineo Conyuge-->
+                <div class="col-10">
+                    <label for="grpSangreConyu">Grupo Sanguineo Conyuge</label>
+                    <select id="grpSangreConyu">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="?">Desconoce</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <!--Contenedor de Estado Nutricional-->
+        <div class="contSecciones">
+            <div class="col-25">
+                <label for="Peso">Peso</label>
+                <input type="number" name="" id="Peso">
+                <label for="estatura">Estatura</label>
+                <input type="num" id="estatura">
+            </div>
+            <!--Aqui pondria un label que indique cual es el imc y por tanto el estado nutricional autocalculado, no se como hacerlo-->
+        </div>
+
+        <!--Termino de la row-->
+    </div>
+
+    <!--Patologia Familiar Medicamentos Cronicos Anticoncepcion Control prenatal y demas-->
+    <div class="row">
+        <div class="col-25">
+            <!--Patologia Fam-->
+            <div class="col-10">
+                <div class="contSecciones">
+                    <label style="padding-left: 30px;">Patologia Familiar</label>
+                    <select id="patoFam">
+                        <option value="Ninguna">Ninguna</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="TBC Pulmonar">TBC Pulmonar</option>
+                        <option value="Hipertensión Arterial">Hipertensión Arterial</option>
+                        <option value="Alergias">Alergias</option>
+                        <option value="Asma">Asma</option>
+                        <option value="Epilepsia">Epilepsia</option>
+                        <option value="Enfermedades Tiroiodes">Enfermedades Tiroiodes</option>
+                        <option value="Enfermedades Cardiacas">Enfermedades Cardiacas</option>
+                        <option value="Enfermedades Renal">Enfermedades Renal</option>
+                    </select>
+                    <button class="btnMeterPatologia btn-fam">Añadir</button>
+                    <ul class="lista-pat-familiar">
+                        <!--<li class="li-pat-familiar">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
+                    </ul>
+                    <label for="">Aca justo aqui deberia poner una lista de total añadidos</label>
+                    <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar mas patologias familiar?-->
+                    <!-- Hay que hacer que este Combo box se conecte a uina bdd para que ponga todas las patologias medicas facilmente y que haga lo de arriba igual -->
+                </div>
+            </div>
+            <!--Patologia Medica-->
+            <div class="col-10">
+                <div class="contSecciones">
+                    <label style="padding-left: 30px;">Patologia Medica</label>
+                    <select id="patoMedica">
+                        <option value="Ninguna">Ninguna</option>
+                        <option value="Diabetes">Diabetes</option>
+                        <option value="TBC Pulmonar">TBC Pulmonar</option>
+                        <option value="Hipertensión Arterial">Hipertensión Arterial</option>
+                        <option value="Alergias">Alergias</option>
+                        <option value="Asma">Asma</option>
+                        <option value="Epilepsia">Epilepsia</option>
+                        <option value="Enfermedades Tiroiodes">Enfermedades Tiroiodes</option>
+                        <option value="Enfermedades Cardiacas">Enfermedades Cardiacas</option>
+                        <option value="Enfermedades Renal">Enfermedades Renal</option>
+                    </select>
+                    <button class="btnMeterPatologia">Añadir</button>
+                    <label for="">Aca justo aqui deberia poner una lista de total añadidos</label>
+                    <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar mas patologias familiar?-->
+                    <!-- Hay que hacer que este Combo box se conecte a uina bdd para que ponga todas las patologias medicas facilmente y que haga lo de arriba igual -->
+
+                </div>
+            </div>
+            <!--Patologia Quirurgica-->
+            <div class="col-10">
+                <div class="contSecciones">
+                    <div class="col-10">
+                        <label style="padding-left: 30px;">Patologia Quirurgica</label>
+                        <select id="patoMedica">
+                            <option value="Ninguna">Ninguna</option>
+                            <option value="Cono">Cono</option>
+                            <option value="Miomas">Miomas</option>
+                            <option value="Infertibilidad">Infertibilidad</option>
+                            <option value="Litiasis renal">Litiasis renal</option>
+                            <option value="Asma">Asma</option>
+                            <option value="Colelitiasis">Colelitiasis</option>
+                            <option value="Apendicectomia">Apendicectomia</option>
+
+                        </select>
+                        <button class="btnMeterPatologia">Añadir</button>
+                        <label for="">Aca justo aqui deberia poner una lista de total añadidos</label>
+                        <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar mas patologias familiar?-->
+                        <!-- Hay que hacer que este Combo box se conecte a uina bdd para que ponga todas las patologias medicas facilmente y que haga lo de arriba igual -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-25">
+            <!--Medicamentos cronicos-->
+            <div class="contSecciones">
+                <label style="padding-left: 55px;">Medicamentos cronicos</label>
+                <label class="contRadioButtn">No <input type="checkbox" name="rMedCronico" id=""><span
+                        class="radioBtn"></span> </label>
+                <label class="contRadioButtn">Si, Durante el 1er Trimestre <input type="checkbox" name="rMedCronico"
+                        id=""><span class="radioBtn"></span> </label>
+                <label class="contRadioButtn">Si, Despues del 1er Trimestre <input type="checkbox" name="rMedCronico"
+                        id=""><span class="radioBtn"></span> </label>
+                <label class="contRadioButtn">No sabe <input type="checkbox" name="rMedCronico" id=""><span
+                        class="radioBtn"></span> </label>
+                <label for="">Otro</label>
+                <input type="text" name="" id="Mejorar">
+                <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar detallar los medicamentos Cronicos?-->
+            </div>
+            <!-- Cigarrilos Alcohol Para tu cuerpo bonbom -->
+
+            <div class="contSecciones">
+                <div class="col-25">
+
+                    <label style="padding-left: 55px;">Cigarrilos por dia</label>
+                    <label class="contRadioButtn">No <input type="radio" name="rCigarrillo" id=""><span
+                            class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Ocasional<input type="radio" name="rCigarrillo" id=""><span
+                            class="radioBtn"></span> </label>
+                    <input type="number" name="" id="tAlcohol">
+
+                </div>
+                <div class="col-25">
+                    <label style="padding-left: 55px;">Alcohol/dia(Copa vino)</label>
+
+                    <label class="contRadioButtn">No <input type="radio" name="rAlcohol" id=""><span
+                            class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Ocasional<input type="radio" name="rAlcohol" id=""><span
+                            class="radioBtn"></span> </label>
+                    <input type="number" name="" id="tAlcohol">
+                </div>
+            </div>
+            <!-- Drogas(No hare un chiste sobre esto) -->
+            <div class="contSecciones">
+                <label style="padding-left: 30px;">Drogas</label>
+                <select id="drogas">
+                    <option value="Ninguna">Ninguna</option>
+                    <option value="Cocaina">Cocaina</option>
+                    <option value="Marihuana">Marihuana</option>
+                    <option value="Pasta Base">Pasta Base</option>
+                    <option value="Anfetamina">Anfetamina</option>
+                    <option value="Benzodiazepinas">Benzodiazepinas</option>
+                </select>
+                <label for="">Otro</label>
+                <input type="text" name="" id="Mejorar">
+                <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar mas patologias familiar?-->
+                <!-- Hay que hacer que este Combo box se conecte a uina bdd para que ponga todas las patologias medicas facilmente y que haga lo de arriba igual -->
+
+            </div>
+        </div>
+        <div class="col-25">
+            <!--Anticoncepcion-->
+            <div class="contSecciones">
+                <label style="padding-left: 55px;">AntiConcepcion(Ultimos 6 meses) </label>
+                <label class="contRadioButtn">Natural <input type="checkbox" name="chkAntiConcepcion" id=""><span
+                        class="radioBtn"></span> </label>
+                <label class="contRadioButtn">D.I.U.<input type="checkbox" name="chkAntiConcepcion" id=""><span
+                        class="radioBtn"></span> </label>
+                <label class="contRadioButtn">Oral<input type="checkbox" name="chkAntiConcepcion" id=""><span
+                        class="radioBtn"></span> </label>
+                <label class="contRadioButtn">No <input type="checkbox" name="chkAntiConcepcion" id=""><span
+                        class="radioBtn"></span> </label>
+                <label for="">Otro</label>
+                <input type="text" name="" id="Mejorar">
+                <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar y poner mas Metodos Anticonceptivos-->
+            </div>
+            <!-- Embarazos Previos toditos toditos -->
+            <div class="contSecciones">
+                <div class="col-25">
+                    <label style="padding-left: 55px;">Embarazos Previos</label>
+                    <label class="contRadioButtn">Normales/Primigesta <input type="checkbox" name="rMedCronico"
+                            id=""><span class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Mala historia Obstetrica <input type="checkbox" name="rMedCronico"
+                            id=""><span class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Preeclampsia<input type="checkbox" name="rMedCronico" id=""><span
+                            class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Diabetes Gestacional <input type="checkbox" name="rMedCronico"
+                            id=""><span class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Recien Nacido con Malformacion SNC <input type="checkbox"
+                            name="rMedCronico" id=""><span class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Recien Nacido con Malformacion Cardiaca<input type="checkbox"
+                            name="rMedCronico" id=""><span class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Recien Nacido DOWN<input type="checkbox" name="rMedCronico"
+                            id=""><span class="radioBtn"></span> </label>
+                    <label class="contRadioButtn">Recien Nacido con otra malformacion <input type="checkbox"
+                            name="rMedCronico" id=""><span class="radioBtn"></span> </label>
+
+                    <label for="">Otro</label>
+                    <input type="text" name="" id="Mejorar">
+                    <!-- Igual aqui podria salir una lista de todos los embarazos que ha tenido asì seria mas facil y nadie tendria que anotarlo -->
+                    <!-- El "podria " Es un debe kebincito -->
+                    <!-- Ya si pero suena bonito el podria a debe, suena a mandon -->
+                    <!-- Mira por chocolate soy sobornable -->
+
+                </div>
+
+
+            </div>
+            <!-- Embarazos Ectopicos -->
+            <div class="contSecciones">
+
+                <label for=""> Es embarazos Ectopicos Si, no se algo aca, no tengo idea Kebin del futuro
+                    solucionalo</label>
+                <!-- Como pongo Embarazos Ectopicos? Digo, listamos los embarazos que ha tenido la persona?-->
+
+
+
+            </div>
+        </div>
+        <div class="col-10">
+            <div class="col-10">
+
+                <div class="contSecciones">
+                    <div class="col-10">
+                        <label for="CtrlPrenatal">Control Prenatal</label>
+                        <input type="number" name="" id="CtrlPrenatal">
+                        <label for="PNormal">Peso Normal</label>
+                        <input type="num" id="PNormal">
+                        <label for="NCtrl">Numero Controles</label>
+                        <input type="num" id="estatura">
+                        <label for="Talla">Talla(cms.)</label>
+                        <input type="number" name="" id="Talla">
+                    </div>
+                </div>
+                <!-- FUR -->
+                <div class="contSecciones">
+                    <label for="">Fecha ultima regla <input type="date" name="" id="fFUR"></label>
+                    <label for="fur"> F.U.R no confiable o no segura
+                        <input type="checkbox" name="" id="dudaFUR">
+                    </label>
+                </div>
+                <!-- Primera Ecografia -->
+                <div class="contSecciones">
+                    <h6>Primera Ecografia</h6>
+                    <label for="">Fecha <input type="date" name="" id="fFUR"></label>
+                    <label for="">Edad Gestacional <input type="date" name="" id="EdGestal"></label>
+
+                </div>
+                <!-- FUR OPERACIONAL -->
+                <div class="contSecciones">
+                    <h5>F.U.R. OPERACIONAL</h5>
+                    <label for=""> <input type="date" name="" id="fFUROP"></label>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>

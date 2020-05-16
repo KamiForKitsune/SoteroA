@@ -1,0 +1,41 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DOMICILIO" directorySegmentName="seg_0" id="B0171AD8-F553-B5A3-C2FA-30F4C5647907">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:22:50 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="poblacion_barrio" id="9409E9B1-B46D-9686-0613-CB9BAD6A7011">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:27:15 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_domicilio" id="A4023D70-C589-676A-A1CC-7C55D7A90576">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:23:18 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="direccion" id="ACC51408-CD4A-47FE-A201-4C1FAE548495">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:23:18 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numero_direccion" id="C10AC08C-BD6A-B004-047B-C8E4658CAB5F">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:23:18 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="DOMICILIO_PK" id="44DC7536-0CF2-FD51-AB39-1AE30B6038F1">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:23:18 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

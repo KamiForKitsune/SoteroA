@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="ESTADO_NUTRICIONAL" directorySegmentName="seg_0" id="F322FDA1-BB0F-04E6-2EA8-0556796067EC">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_estado_nutricional" id="428FA305-D377-36F3-1FC2-1575DF2537C9">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="descripc_nutricional" id="605F84FF-CBC0-D488-A116-EA0EC4149549">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="estado_nutricional_pk" id="137CAFA4-7F70-839E-E1FA-9A218892F2D3">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

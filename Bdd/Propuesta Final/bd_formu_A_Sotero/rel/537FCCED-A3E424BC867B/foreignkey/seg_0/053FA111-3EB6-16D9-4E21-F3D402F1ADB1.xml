@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="053FA111-3EB6-16D9-4E21-F3D402F1ADB1" containerWithKeyObject="A55E054A-CA97-5117-0283-2768F87E103A" localFKIndex="0E6819A5-777A-BA23-CBBC-CD0DC356A78A" name="COMENTARIO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:48:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<referredTableLongName>COMENTARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>59E88231-3F3B-9479-1A53-7BFFEFBF1B11</referredTableID>
+<keyObject>98123301-6315-9306-7662-B44DF2DFC104</keyObject>
+<referredKeyID>98123301-6315-9306-7662-B44DF2DFC104</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_comentario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

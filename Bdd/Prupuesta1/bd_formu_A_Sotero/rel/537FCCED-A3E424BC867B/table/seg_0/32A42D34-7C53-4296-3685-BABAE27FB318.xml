@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="32A42D34-7C53-4296-3685-BABAE27FB318" name="COMUNA">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>08A5E991-D19D-77CB-49A6-08C4D964C284</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_comuna" id="EDB79959-03ED-752E-4B7E-246AA8C371B8">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>53BEA3AE-3CE9-27D1-D251-C416C75ED04E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_comuna" id="9870217E-365C-938C-9B63-C6F840393BAC">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>E540519D-90B7-A622-9189-762BA175A241</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_region" id="68C10573-FFCC-F185-9129-A7EEC24714EB">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>2C0306D1-9C94-4FDF-9433-DCF5545D916A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C01482E0-BB64-52FF-FB27-7F9C0D07FC52" referredColumn="8962C4E1-69FB-0F80-AAD6-11ED8C799174"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0E3BC2A4-0469-79B6-5187-4497F8CB3384" name="comuna_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>63083BD9-FF2A-A690-DBDF-3789C628C616</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EDB79959-03ED-752E-4B7E-246AA8C371B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3F5D9EB1-E0CC-F9AE-1115-A3E4B8954AC4" name="region_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="68C10573-FFCC-F185-9129-A7EEC24714EB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="0F281F51-9509-1C43-A215-E4525054FD14" containerWithKeyObject="05F898E7-F324-4E52-1453-8E59FDFDFCF4" localFKIndex="03B7B957-CB91-8518-1C02-CE1821896299" name="droga_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>54E72C50-0023-1DA0-89F6-9B26C2483CC7</importedID>
+<referredTableLongName>DROGA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>095BCCB6-0D51-D2CD-FC4C-0412492D5789</referredTableID>
+<keyObject>8D4BD37D-0708-D082-932E-B754E0FA3151</keyObject>
+<referredKeyID>8D4BD37D-0708-D082-932E-B754E0FA3151</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_droga</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

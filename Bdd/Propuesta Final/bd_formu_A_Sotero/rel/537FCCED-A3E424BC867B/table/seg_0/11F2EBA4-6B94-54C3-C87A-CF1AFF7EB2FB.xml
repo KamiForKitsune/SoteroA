@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="11F2EBA4-6B94-54C3-C87A-CF1AFF7EB2FB" name="TIPO_DOMICILIO">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:10 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<ordsAlias>table_32</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tipo_domicilio" id="7C334579-34E7-C01D-4216-26115ECE397D">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:46 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descrip_tipo_dom" id="5461179E-8A2F-9E59-E526-88C628E32621">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:46 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8FAEA7A6-81B5-EC0A-8A64-3C0CFA36F34D" name="TIPO_DOMICILIO_PK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:46 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7C334579-34E7-C01D-4216-26115ECE397D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

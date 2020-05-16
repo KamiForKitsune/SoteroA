@@ -1,0 +1,168 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="EMBARAZO_ACTUAL" directorySegmentName="seg_0" id="A55E054A-CA97-5117-0283-2768F87E103A">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="f_ultima_regla" id="03B26CC8-7E14-D5B3-06A5-A13F627452ED">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_anticonceptivo" id="1F254BB6-51E2-4E67-B643-136EAEA2D88B">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_emb_previo" id="3291A8C9-A115-83FC-EDB6-40929C70E51F">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="imc" id="38417408-72EC-77AA-8BE6-EB2E370EA548">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:11:28 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_ecografia" id="43345915-DFA0-FF0D-E23C-8F8993442BE0">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:01:10 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_embarazo" id="4DD78EF1-3F5B-5117-B438-17A17A881B3E">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_progenitor" id="50A8EC98-B7DB-59C2-72A8-240AD91EB185">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tipo_embarazo" id="5A402757-71E2-9EB2-B38A-E0584F975338">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fecha_ingreso" id="5B713358-E0CE-A6F9-5748-FB821AB1E156">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numero_controles" id="5C0F9B58-4F7F-33DA-FFCC-A870C6748274">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:15:24 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="peso_madre" id="5EB57404-BAD0-0D32-CE26-729DF4BBC172">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_comentario" id="6803BCD9-417A-AB5A-C144-2AA9798AC424">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:48:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fur_operacional" id="764DE0EA-679E-9163-3BB3-856ACFBECD04">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="numero_cigarrillos" id="85425F1B-7942-283C-D64B-1AD422900590">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="talla_madre" id="884904C6-E7F1-090C-55B5-BE1F2CDB6231">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:10:50 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_estado_nutricional" id="A9CAA880-D9B0-5A5F-5C01-00F8BA259088">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="fur_confiable" id="AA684AF4-54EE-EA89-3C01-4AB45F280942">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_paciente" id="B633CB52-63BE-CC9A-9EE5-2768F33664B5">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="semana_gestacion" id="BAD634C5-A8E9-2FC5-3AF9-2637A2120548">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:15:07 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="edad_gestac_eco" id="BC18281D-B276-DFE7-7E45-DC2E8822A8F3">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:02:38 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_medicamento" id="E5AEA8DF-892B-617B-2D48-3B1E3C976227">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:23:38 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="gemelar" id="FA3F7C70-11FE-2EA3-E440-932ACFF393FD">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="COMENTARIO_FK" id="0E6819A5-777A-BA23-CBBC-CD0DC356A78A">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:48:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="MED_CRONICO_FK" id="3AFFFCCE-281F-E885-8F95-F8AB7BB77EE3">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:23:38 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="embarazo_estadonutricional_fk" id="4293666D-851C-07CB-B99C-2FDBC7F2F13A">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="embarazo_paciente_fk" id="54CB72E2-DAC7-AF29-2CAC-387423177F64">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="embarazo_causa_fk" id="65BBC97C-C693-1C3F-A2BF-A06BD5D01FC0">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="embarazo_progenitor_fk" id="67FBBE5E-1F95-C549-B7AD-E2085BBF33A9">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="embarazo_anticonceptivo_fk" id="FE9339F0-9313-CF02-7947-5EA79BC60910">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="embarazo_actual_pk" id="17313503-7943-08F6-A139-950BF0F4BF23">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

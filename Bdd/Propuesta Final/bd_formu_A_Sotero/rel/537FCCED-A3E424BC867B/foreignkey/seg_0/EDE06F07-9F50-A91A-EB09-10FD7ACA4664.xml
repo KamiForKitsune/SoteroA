@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EDE06F07-9F50-A91A-EB09-10FD7ACA4664" containerWithKeyObject="A55E054A-CA97-5117-0283-2768F87E103A" localFKIndex="4293666D-851C-07CB-B99C-2FDBC7F2F13A" name="embarazo_estado_nutricional_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>62F11861-C16C-98ED-019A-5C5B6BF3DA61</importedID>
+<referredTableLongName>ESTADO_NUTRICIONAL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F322FDA1-BB0F-04E6-2EA8-0556796067EC</referredTableID>
+<keyObject>137CAFA4-7F70-839E-E1FA-9A218892F2D3</keyObject>
+<referredKeyID>137CAFA4-7F70-839E-E1FA-9A218892F2D3</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_estado_nutricional</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

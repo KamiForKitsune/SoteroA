@@ -1,0 +1,371 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A55E054A-CA97-5117-0283-2768F87E103A" name="EMBARAZO_ACTUAL">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>D3705C8A-169F-1C53-F303-1F1EEB3C3FA2</importedID>
+<ordsAlias>embarazo</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_embarazo" id="4DD78EF1-3F5B-5117-B438-17A17A881B3E">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>20609DC5-8E25-9162-BA90-099768487806</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ingreso" id="5B713358-E0CE-A6F9-5748-FB821AB1E156">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>0A544C86-33FE-A6E2-1F67-1DBAD611D1A9</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="talla_madre" id="884904C6-E7F1-090C-55B5-BE1F2CDB6231">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:10:50 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="peso_madre" id="5EB57404-BAD0-0D32-CE26-729DF4BBC172">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>811FC75E-3232-6259-E58F-49532165B554</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="imc" id="38417408-72EC-77AA-8BE6-EB2E370EA548">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:11:28 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="semana_gestacion" id="BAD634C5-A8E9-2FC5-3AF9-2637A2120548">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:15:07 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_controles" id="5C0F9B58-4F7F-33DA-FFCC-A870C6748274">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:15:24 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="f_ultima_regla" id="03B26CC8-7E14-D5B3-06A5-A13F627452ED">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>F60E9881-81E2-C3C3-F4C5-DC263041C7B2</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fur_confiable" id="AA684AF4-54EE-EA89-3C01-4AB45F280942">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>EF4C7F16-A318-FBD1-03BD-72E456F3B6CC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fecha_ecografia" id="43345915-DFA0-FF0D-E23C-8F8993442BE0">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:01:10 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="edad_gestac_eco" id="BC18281D-B276-DFE7-7E45-DC2E8822A8F3">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:02:38 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fur_operacional" id="764DE0EA-679E-9163-3BB3-856ACFBECD04">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>09E3009A-1410-75B3-B450-88ACC02872EB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gemelar" id="FA3F7C70-11FE-2EA3-E440-932ACFF393FD">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>84A3EE7E-7970-5E72-046E-518E8B4BB67E</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="numero_cigarrillos" id="85425F1B-7942-283C-D64B-1AD422900590">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>D0CE9E8A-EE03-5547-34E2-8801865A4536</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_comentario" id="6803BCD9-417A-AB5A-C144-2AA9798AC424">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:48:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="053FA111-3EB6-16D9-4E21-F3D402F1ADB1" referredColumn="7B704805-3E84-A4DF-6200-1F510F732256"/>
+</associations>
+</Column>
+<Column name="id_estado_nutricional" id="A9CAA880-D9B0-5A5F-5C01-00F8BA259088">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>9F86047B-7F6C-CF6B-9765-688B278EA81C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EDE06F07-9F50-A91A-EB09-10FD7ACA4664" referredColumn="428FA305-D377-36F3-1FC2-1575DF2537C9"/>
+</associations>
+</Column>
+<Column name="id_anticonceptivo" id="1F254BB6-51E2-4E67-B643-136EAEA2D88B">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>D5DB1195-F4BF-C5E4-4F46-A3D524A207BA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="592CE073-60B6-3D9B-FC94-5ACFD7F2B3B0" referredColumn="4B0F67DF-192A-D46E-6F50-ED3E9C0A1088"/>
+</associations>
+</Column>
+<Column name="id_emb_previo" id="3291A8C9-A115-83FC-EDB6-40929C70E51F">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>3DD10461-F4A3-D67A-B69F-4016500595A3</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5ED93706-E638-B7C0-D72E-71E31A449AD5" referredColumn="01057C59-88B6-C7DC-ADB9-F001463D228C"/>
+</associations>
+</Column>
+<Column name="id_progenitor" id="50A8EC98-B7DB-59C2-72A8-240AD91EB185">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>6A7A95F5-6598-D112-CF15-779A92C5ABB1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="EAA1BBAE-BA52-A7A6-04C6-5FC2CB6D75C2" referredColumn="BE7E0DF7-9FB3-C770-4C75-6B68B65E595B"/>
+</associations>
+</Column>
+<Column name="id_paciente" id="B633CB52-63BE-CC9A-9EE5-2768F33664B5">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>ADB0B54C-29DA-A447-8D8E-973094CBCF55</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2E227328-80D7-A81B-EC44-047C1B85E80E" referredColumn="3DB6A499-D09C-C55A-424D-9D6BE1983413"/>
+</associations>
+</Column>
+<Column name="id_medicamento" id="E5AEA8DF-892B-617B-2D48-3B1E3C976227">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:23:38 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="08A4D523-A4E9-92B7-B539-F445E1451392" referredColumn="CE9675FB-330E-50B2-6B73-3C0C33C55252"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="17313503-7943-08F6-A139-950BF0F4BF23" name="embarazo_actual_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>CAE5C51F-9D38-03B5-216E-24FC16602A63</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4DD78EF1-3F5B-5117-B438-17A17A881B3E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FE9339F0-9313-CF02-7947-5EA79BC60910" name="embarazo_anticonceptivo_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F254BB6-51E2-4E67-B643-136EAEA2D88B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="65BBC97C-C693-1C3F-A2BF-A06BD5D01FC0" name="embarazo_causa_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3291A8C9-A115-83FC-EDB6-40929C70E51F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4293666D-851C-07CB-B99C-2FDBC7F2F13A" name="embarazo_estado_nutricional_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9CAA880-D9B0-5A5F-5C01-00F8BA259088"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="54CB72E2-DAC7-AF29-2CAC-387423177F64" name="embarazo_paciente_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B633CB52-63BE-CC9A-9EE5-2768F33664B5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="67FBBE5E-1F95-C549-B7AD-E2085BBF33A9" name="embarazo_progenitor_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50A8EC98-B7DB-59C2-72A8-240AD91EB185"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0E6819A5-777A-BA23-CBBC-CD0DC356A78A" name="COMENTARIO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 00:48:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6803BCD9-417A-AB5A-C144-2AA9798AC424"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3AFFFCCE-281F-E885-8F95-F8AB7BB77EE3" name="MED_CRONICO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:23:38 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E5AEA8DF-892B-617B-2D48-3B1E3C976227"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="EAA1BBAE-BA52-A7A6-04C6-5FC2CB6D75C2" containerWithKeyObject="A55E054A-CA97-5117-0283-2768F87E103A" localFKIndex="67FBBE5E-1F95-C549-B7AD-E2085BBF33A9" name="embarazo_progenitor_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>6280097B-49B8-6478-6D4F-64C4847D0A5C</importedID>
+<referredTableLongName>PROGENITOR</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3EFDDDE2-EA3F-B2C7-4391-BB3EB3436028</referredTableID>
+<keyObject>4DB2DABF-0076-683B-4012-5D1F40C2B506</keyObject>
+<referredKeyID>4DB2DABF-0076-683B-4012-5D1F40C2B506</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_progenitor</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

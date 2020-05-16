@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD37D729-03E9-3AFC-C777-C2A8F6F7A109" name="EMBARAZO_PREVIO">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>572DBE7C-6351-EE72-EA49-58B58390183F</importedID>
+<ordsAlias>causa</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_emb_previo" id="01057C59-88B6-C7DC-ADB9-F001463D228C">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>A4F57B6D-5B2E-CC40-6FDE-754F79675EC0</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aborto_espontaneo" id="FF9A5D22-65CB-F8E9-F6C2-0210CCAEB36C">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:34:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="aborto_provocado" id="DE2C4B0D-D0EE-755A-8A7E-143694FCEFCA">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:34:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parto_prematuro" id="3B957161-6952-3FEF-04FB-701AB1BB6FE0">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:34:04 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="parto_termino" id="C2D7E765-7F8E-E053-EAFF-E1C7784440C4">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:35:01 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="peso_rn_mayor_peso" id="96238933-31BC-445C-7E90-6E50E3E4BD58">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:36:09 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="muerte_natural" id="A1C32C60-CF04-93DF-79B9-A2D1C73D2652">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:36:44 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="muerte_neonatal" id="4D3CBB95-CDA4-5D66-7634-727E40A0A940">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:36:44 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="embarazo_ectopico" id="4645C952-5106-F8D8-D97F-6E12A5E0C225">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:36:44 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hijos_vivos" id="ED39996F-8519-109D-6FBC-30C1A4BB33EB">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:40:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cesareas_previas" id="94E0F6DE-19F9-FB68-8274-54F5CE28FD04">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:41:40 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="embarazos_gemelares" id="1AE097C8-5C65-1A55-53D4-06C67F336FF6">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:41:40 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_parto" id="F78D91AA-BFDA-E6E1-DC18-D9EC93A4EA74">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:57 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9DEC78B9-DFA4-7897-4CCB-B6B73C41A84F" referredColumn="542F9475-282E-C4AC-DBE5-8A51087636AA"/>
+</associations>
+</Column>
+<Column name="id_tipo_emb_previo" id="B44B420D-A73A-843C-4400-A83214FD094E">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:57:13 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="805EA2FE-7D92-147D-72EB-C97277D49A07" referredColumn="9BF6368B-EFB0-6EF3-1208-41C7B68286D1"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1EE9A3C2-3E06-93E6-2544-AFF22C2749B6" name="embarazo_previo_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>2AD3341A-DFA6-0A57-32B5-121748A9E9BE</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01057C59-88B6-C7DC-ADB9-F001463D228C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4021BDDE-CAA1-26DC-E3CE-7C81B47F9FDD" name="CAUSA_PARTO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:57 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F78D91AA-BFDA-E6E1-DC18-D9EC93A4EA74"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="15C0D658-06E3-3005-7E3B-CC1B4B468997" name="TIPO_EMBARAZO_PREVIO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:57:13 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B44B420D-A73A-843C-4400-A83214FD094E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="7D426A6D-DFC4-B918-2AD0-ACCFE56BAFF4" containerWithKeyObject="C3ABC045-D869-F55F-2428-B049BD99CBBB" localFKIndex="6CF2CFDF-6E02-7557-687B-F3A6EB594BF5" name="paciente_prevision_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>CFDF0823-9720-F388-7C69-1BE3FF6D504D</importedID>
+<referredTableLongName>PREVISION</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D5C8487D-9B16-D676-44DB-3F5DCE524944</referredTableID>
+<keyObject>53BD2651-BAB4-1645-CA8B-052F3F9BD123</keyObject>
+<referredKeyID>53BD2651-BAB4-1645-CA8B-052F3F9BD123</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_prevision</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="805EA2FE-7D92-147D-72EB-C97277D49A07" containerWithKeyObject="BD37D729-03E9-3AFC-C777-C2A8F6F7A109" localFKIndex="15C0D658-06E3-3005-7E3B-CC1B4B468997" name="TIPO_EMBARAZO_PREVIO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:57:13 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<referredTableLongName>TIPO_EMBARAZO_PREVIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>80663218-728A-EC3D-8D80-0C1820DB5B9D</referredTableID>
+<keyObject>310B5E52-2302-979E-C173-9EDB22537375</keyObject>
+<referredKeyID>310B5E52-2302-979E-C173-9EDB22537375</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_emb_previo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

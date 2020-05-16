@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5ED93706-E638-B7C0-D72E-71E31A449AD5" containerWithKeyObject="A55E054A-CA97-5117-0283-2768F87E103A" localFKIndex="65BBC97C-C693-1C3F-A2BF-A06BD5D01FC0" name="embarazo_causa_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>AA6AD659-BE14-EB84-4E82-998BB79D5C91</importedID>
+<referredTableLongName>CAUSA_CESAREA</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BD37D729-03E9-3AFC-C777-C2A8F6F7A109</referredTableID>
+<keyObject>1EE9A3C2-3E06-93E6-2544-AFF22C2749B6</keyObject>
+<referredKeyID>1EE9A3C2-3E06-93E6-2544-AFF22C2749B6</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_causa</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

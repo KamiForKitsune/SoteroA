@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MEDICAMENTO_CRONICO" directorySegmentName="seg_0" id="D1142ED3-C289-7DFE-12EA-FC9696D7A3EC">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:16:15 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="cuando_consumo" id="03247B1C-6D67-6BF8-7EA8-342D0E67284D">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:17:30 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="cuando_aspirina" id="512F210F-A117-CF37-B259-074AE33DAFA8">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:20:11 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_nombre_med" id="6F836086-D780-294C-7321-0AF0AB549E43">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:22:54 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="aspirina" id="AEFA9162-CECE-AB1E-A9B9-795E14E5361C">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:19:50 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_medicamento" id="CE9675FB-330E-50B2-6B73-3C0C33C55252">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:17:30 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="NOMBRE_MED_FK" id="8C758733-0068-861C-2E50-49542B8EC1F9">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:22:54 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MED_CRONICO_PK" id="585FF309-E693-1338-2E84-D4B3AE1AF3E1">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:20:30 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

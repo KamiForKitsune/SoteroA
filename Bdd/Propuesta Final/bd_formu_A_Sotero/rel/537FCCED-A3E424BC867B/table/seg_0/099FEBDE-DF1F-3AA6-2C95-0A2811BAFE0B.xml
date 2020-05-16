@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="099FEBDE-DF1F-3AA6-2C95-0A2811BAFE0B" name="TOTAL_ALCOHOL">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>5FCB49FF-C708-358C-A3DA-0F9495092E90</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_alcohol" id="9D33CB28-0FE5-A339-E30E-67083067F1AC">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>F3C6B442-C6C9-CE94-2CC4-B3AA91C0348C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="202FD595-234D-ADF7-D9C7-CFDA8DCE53FD" referredColumn="B9874139-56F7-DD15-F45C-204F69FC16BE"/>
+</associations>
+</Column>
+<Column name="id_embarazo" id="0EAF0671-BA84-CBCE-D4F9-917CEE295895">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>6C0B3AC3-7B73-A40F-61CB-3FC892220149</importedID>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E950952-A7AF-917A-E6DD-D1CC1FABAF46" referredColumn="4DD78EF1-3F5B-5117-B438-17A17A881B3E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3144E795-D226-9511-7589-9E93BA2052E4" name="total_alcohol_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>03DF0AEC-2169-AE0E-7AEA-AD27EBA56E6A</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D33CB28-0FE5-A339-E30E-67083067F1AC"/>
+<colUsage columnID="0EAF0671-BA84-CBCE-D4F9-917CEE295895"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E68D5569-8D37-B0A2-C053-DA97AE33CD8B" name="alcohol_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9D33CB28-0FE5-A339-E30E-67083067F1AC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6FAF2A8-9E98-814F-B1AB-BADC9E41E8D2" name="embarazo_fkv1">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0EAF0671-BA84-CBCE-D4F9-917CEE295895"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

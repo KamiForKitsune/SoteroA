@@ -1,0 +1,225 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+.sidebarNavFicha a {
+  position: absolute;
+  left: -80px;
+  padding: 10px;
+  width: 80px;
+  text-decoration: none;
+  font-size: 80%;
+  color: white;
+  transition: all .18s ease-out;
+}
+
+.sidebarNavFicha a:hover {
+  left: 0;
+  box-shadow: 0px 6px 7px rgba(0, 0, 0, .15);
+}
+
+#primera {
+  top: 20px;
+  background-color: cadetblue;
+}
+
+#segunda {
+  top: 80px;
+  background-color: cadetblue;
+}
+
+#tercera {
+  top: 140px;
+  background-color: cadetblue;
+}
+
+#cuarta {
+  top: 200px;
+  background-color: cadetblue
+}
+
+#quinta {
+  top: 260px;
+  background-color: cadetblue;
+}
+
+.contenedorFichal {
+  border-radius: 10px;
+  display: flex;
+  border-style: groove;
+}
+
+label {
+  display: block;
+}
+
+.contEnLinea {
+  display: -ms-flexbox;
+  flex-flow: row wrap;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.contEnLinea span input {
+  margin: 0px 10px 10px 10px;
+}
+
+.contEnLinea span label {
+  font-size: 12px;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.contRadioButtn {
+  display: block;
+  position: relative;
+  padding-left: 85px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 80%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.contRadioButtn input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.radioBtn {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.contRadioButtn:hover input~.radioBtn {
+  background-color: #eee;
+}
+
+.contRadioButtn input:checked~.radioBtn {
+  background-color: royalblue;
+}
+
+.radioBtn:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.contRadioButtn input:checked~.radioBtn:after {
+  display: block;
+}
+
+.contRadioButtn .radioBtn:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+/* Para las distintas secciones del doc*/
+
+.col-10 {
+  -ms-flex: 10%;
+  flex: 10%;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25, .col-50, .col-75, .col-10 {
+  padding: 0 5px;
+}
+
+.contSecciones {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+.btnMeterPatologia {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 10px;
+  margin: 4px 2px;
+  border-radius: 50%;
+}
+
+.lista-pat-familiar {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.li-pat-familiar {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  background-color: #FAFAFA;
+  padding: 0px 5px;
+}
+
+.btn:link, .btn:visited {
+  text-decoration: none;
+  /*margin-left: 100px;*/
+  position: relative;
+  right: -10px;
+  background-color: rgb(212, 83, 83);
+  color: white;
+  padding: 7px;
+  transition: all .2s ease-out;
+  font-weight: 900;
+  font-size: 10px;
+}
+
+.btn:hover {
+  /*transform: translate(0, -2px);*/
+  padding: 9px;
+}
+
+.btn:active {
+  transform: translate(0, -1px);
+  box-shadow: 0px 2.5px 2.5px rgba(0, 0, 0, .2);
+}

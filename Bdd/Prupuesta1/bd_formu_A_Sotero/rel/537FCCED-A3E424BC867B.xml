@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="537FCCED-419B-B026-FCF3-A3E424BC867B" mainViewID="2D5DDBB3-888C-06E4-56D7-2112D2F55EBA">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:40:52 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<importDDLFileStamps>
+<importDDLFileStamp class="oracle.dbtools.crest.imports.DDLFileStamp">
+<fileName>BDD FICHA A PROPOSAL B KEB.sql</fileName>
+<pathName>C:\Users\Elise\Downloads</pathName>
+<dbType>9</dbType>
+</importDDLFileStamp>
+</importDDLFileStamps>
+</relationalModel>

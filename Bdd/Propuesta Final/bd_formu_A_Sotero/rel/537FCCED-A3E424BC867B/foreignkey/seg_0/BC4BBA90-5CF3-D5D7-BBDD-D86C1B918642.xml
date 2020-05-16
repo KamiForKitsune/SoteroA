@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="BC4BBA90-5CF3-D5D7-BBDD-D86C1B918642" containerWithKeyObject="B0171AD8-F553-B5A3-C2FA-30F4C5647907" localFKIndex="C7DFAF8C-9433-157F-6F71-5B5D70E2AD47" name="TIPO_DOMICILIO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:26:24 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<referredTableLongName>TIPO_DOMICILIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>11F2EBA4-6B94-54C3-C87A-CF1AFF7EB2FB</referredTableID>
+<keyObject>8FAEA7A6-81B5-EC0A-8A64-3C0CFA36F34D</keyObject>
+<referredKeyID>8FAEA7A6-81B5-EC0A-8A64-3C0CFA36F34D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tipo_domicilio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

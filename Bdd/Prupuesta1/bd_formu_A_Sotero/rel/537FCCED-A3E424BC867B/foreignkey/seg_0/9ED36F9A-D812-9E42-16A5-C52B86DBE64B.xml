@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9ED36F9A-D812-9E42-16A5-C52B86DBE64B" containerWithKeyObject="C3ABC045-D869-F55F-2428-B049BD99CBBB" localFKIndex="0F1AC65E-6223-DBE4-9B41-085739D777DD" name="paciente_consultorio_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>212C6E81-7D66-1DFC-CFFC-6642D75A472C</importedID>
+<referredTableLongName>CONSULTORIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>D38B0CBC-774D-3AFC-6A17-EBFF6ACA20FD</referredTableID>
+<keyObject>C32CED25-A2B1-C941-6C44-7C22E48A6A7A</keyObject>
+<referredKeyID>C32CED25-A2B1-C941-6C44-7C22E48A6A7A</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_consultorio</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

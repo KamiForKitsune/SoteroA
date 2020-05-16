@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="CB472E3F-218D-5D1D-5FD9-ACD0A3AB33A9" containerWithKeyObject="C3ABC045-D869-F55F-2428-B049BD99CBBB" localFKIndex="1E3AEDCC-9ECA-0C93-8708-4C0C09275B4E" name="paciente_grupo_sanguineo_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>42A49400-4E38-2203-DE18-606F0BA342C5</importedID>
+<referredTableLongName>GRUPO_SANGUINEO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>09FA2CDA-4D18-CC75-11CB-54C751EE002F</referredTableID>
+<keyObject>3D8EA8E4-832D-8CF8-EDDB-08B409E8BC94</keyObject>
+<referredKeyID>3D8EA8E4-832D-8CF8-EDDB-08B409E8BC94</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_grupo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

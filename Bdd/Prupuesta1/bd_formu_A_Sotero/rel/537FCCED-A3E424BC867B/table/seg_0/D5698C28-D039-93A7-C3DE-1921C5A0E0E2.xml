@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5698C28-D039-93A7-C3DE-1921C5A0E0E2" name="NOMBRE_MEDICAMENTO">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:20:39 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<ordsAlias>table_31</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_nombre_med" id="0857F813-7DE5-0D41-BBA8-8DE69CAEABC9">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:21:08 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nombre_medicamento" id="3F9911F2-A546-5DF5-7940-82A9506E4A12">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:21:49 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>150</dataTypeSize>
+<ownDataTypeParameters>150,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8715C755-E0BA-EFD7-8C19-30A9BEB68D64" name="NOMBRE_MED_PK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:21:08 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0857F813-7DE5-0D41-BBA8-8DE69CAEABC9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

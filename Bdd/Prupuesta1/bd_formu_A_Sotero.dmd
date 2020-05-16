@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="bd_formu_A_Sotero" id="16E45044-C8D2-3D44-B981-3D12FD188E3F" version="3.5">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:40:52 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>16E45044-C8D2-3D44-B981-3D12FD188E3F</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="607FB4A6-2C4F-88AD-B9F1-0BBBB9468E52">
+<designStoragePath>C:\BDD FICHA A PROPOSAL B KEB</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

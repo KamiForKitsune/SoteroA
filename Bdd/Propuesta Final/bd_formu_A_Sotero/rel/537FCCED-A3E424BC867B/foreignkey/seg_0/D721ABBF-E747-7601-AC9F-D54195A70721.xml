@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D721ABBF-E747-7601-AC9F-D54195A70721" containerWithKeyObject="C3ABC045-D869-F55F-2428-B049BD99CBBB" localFKIndex="2EC46405-2F83-F1C4-D0AE-5429BE77CE79" name="paciente_actividad_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>A7D2EABB-03A0-A389-99BA-1D63CBC3089E</importedID>
+<referredTableLongName>ACTIVIDAD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>3AB8027F-EE85-3D96-2AC2-903D54831FC2</referredTableID>
+<keyObject>63FA5807-38AC-75B6-59D7-915F9CA68D89</keyObject>
+<referredKeyID>63FA5807-38AC-75B6-59D7-915F9CA68D89</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_actividad</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

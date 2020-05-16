@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="05F898E7-F324-4E52-1453-8E59FDFDFCF4" name="TOTAL_DROGA">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>B0CFC782-BFB2-2190-82C3-BE0C02DF3278</importedID>
+<ordsAlias>total_drogas</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_droga" id="9AC551E6-A4FD-C1BD-6925-42E2B5E5369E">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>F9B208BB-1A8E-DC9A-C7CE-50969394519A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0F281F51-9509-1C43-A215-E4525054FD14" referredColumn="F0205508-6DB9-AD49-400D-4F292BDE7849"/>
+</associations>
+</Column>
+<Column name="id_embarazo" id="EEFBF6F9-311D-8287-0B4D-B40DC7BB8D8D">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>9B2D35C8-2EFB-ED19-7096-16D9EF335EBA</importedID>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>8A552A81-679B-1F33-E65F-8735CFB8E8B0</domain>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4EBF644F-BB61-B8C8-1690-2B14F5697EB8" referredColumn="4DD78EF1-3F5B-5117-B438-17A17A881B3E"/>
+</associations>
+</Column>
+<Column name="cant_drogas" id="82C877A3-8D34-1C29-5D7E-607A2CE94727">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>9E87FA13-E45F-5468-C7F5-07088C800CC6</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="049E0C51-3C3F-1341-B8B8-89B22FC48C83" name="total_droga_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>600BED5A-1136-2C22-3D82-26EC67D4ADC0</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AC551E6-A4FD-C1BD-6925-42E2B5E5369E"/>
+<colUsage columnID="EEFBF6F9-311D-8287-0B4D-B40DC7BB8D8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="03B7B957-CB91-8518-1C02-CE1821896299" name="droga_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9AC551E6-A4FD-C1BD-6925-42E2B5E5369E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C3BCD9B6-DB98-7982-E12A-C7503B33E7A1" name="embarazo_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EEFBF6F9-311D-8287-0B4D-B40DC7BB8D8D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

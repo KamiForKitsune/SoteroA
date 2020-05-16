@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="9DEC78B9-DFA4-7897-4CCB-B6B73C41A84F" containerWithKeyObject="BD37D729-03E9-3AFC-C777-C2A8F6F7A109" localFKIndex="4021BDDE-CAA1-26DC-E3CE-7C81B47F9FDD" name="CAUSA_PARTO_FK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:57 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<referredTableLongName>CAUSA_PARTO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>ACC6CD92-245E-6953-432F-66BAD3B87954</referredTableID>
+<keyObject>177191C6-9BD7-342E-0584-513BBFFE3E32</keyObject>
+<referredKeyID>177191C6-9BD7-342E-0584-513BBFFE3E32</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_parto</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

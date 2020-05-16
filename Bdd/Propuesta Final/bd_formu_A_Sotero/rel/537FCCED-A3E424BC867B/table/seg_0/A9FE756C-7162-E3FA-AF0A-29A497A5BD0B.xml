@@ -1,0 +1,79 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A9FE756C-7162-E3FA-AF0A-29A497A5BD0B" name="TOTAL_PATOLOGIA">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:35 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>1A8136CA-BDB2-1AD7-46AD-C5B09C879F20</importedID>
+<ordsAlias>total_patologias</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_paciente" id="8F7A1F2B-DC9F-9BCE-7ACD-88AF283EE366">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>5F4DD195-BB89-732C-AA40-DAF0CC568B12</importedID>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="577C99ED-3846-D5B2-D093-32FC56B9873A" referredColumn="3DB6A499-D09C-C55A-424D-9D6BE1983413"/>
+</associations>
+</Column>
+<Column name="id_patologia" id="C11C449D-3391-3007-5ECD-688BA5E5E616">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>13586841-E7AC-1E89-5B37-28610A108C5F</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="20B25643-D343-F2B9-387F-2D581C877755" referredColumn="5B5A5C67-F067-A1F2-7D39-AC7333A5B6E8"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6F616A72-32D1-301F-B983-0AE144E023C9" name="relation_17_pk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>81C98438-06D6-1425-EA1C-0F5285F7826B</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F7A1F2B-DC9F-9BCE-7ACD-88AF283EE366"/>
+<colUsage columnID="C11C449D-3391-3007-5ECD-688BA5E5E616"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5D62482E-3305-44B7-6AC3-A8EEEB647661" name="paciente_fkv1">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8F7A1F2B-DC9F-9BCE-7ACD-88AF283EE366"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="302167E0-43CE-E7F9-067E-EC5544267A6F" name="patologia_fk">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C11C449D-3391-3007-5ECD-688BA5E5E616"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

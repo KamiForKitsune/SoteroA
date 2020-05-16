@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="TIPO_DOMICILIO" directorySegmentName="seg_0" id="11F2EBA4-6B94-54C3-C87A-CF1AFF7EB2FB">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:10 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="descrip_tipo_dom" id="5461179E-8A2F-9E59-E526-88C628E32621">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:46 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tipo_domicilio" id="7C334579-34E7-C01D-4216-26115ECE397D">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:46 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="TIPO_DOMICILIO_PK" id="8FAEA7A6-81B5-EC0A-8A64-3C0CFA36F34D">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:25:46 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

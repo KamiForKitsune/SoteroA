@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="202FD595-234D-ADF7-D9C7-CFDA8DCE53FD" containerWithKeyObject="099FEBDE-DF1F-3AA6-2C95-0A2811BAFE0B" localFKIndex="E68D5569-8D37-B0A2-C053-DA97AE33CD8B" name="alcohol_fk">
+<sourceDDLFile>BDD FICHA A PROPOSAL B KEB.sql</sourceDDLFile>
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-18 22:48:36 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<importedID>E57278D5-B7F7-72ED-9C1B-145A96E86D7D</importedID>
+<referredTableLongName>ALCOHOL</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>26B742C1-F712-8A05-7B3F-BAD929EA98D3</referredTableID>
+<keyObject>91EA8202-D689-179B-C304-3FC2861F6CB1</keyObject>
+<referredKeyID>91EA8202-D689-179B-C304-3FC2861F6CB1</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_alcohol</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

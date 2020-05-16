@@ -1,0 +1,31 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="NOMBRE_MEDICAMENTO" directorySegmentName="seg_0" id="D5698C28-D039-93A7-C3DE-1921C5A0E0E2">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:20:39 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_nombre_med" id="0857F813-7DE5-0D41-BBA8-8DE69CAEABC9">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:21:08 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nombre_medicamento" id="3F9911F2-A546-5DF5-7940-82A9506E4A12">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:21:49 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="NOMBRE_MED_PK" id="8715C755-E0BA-EFD7-8C19-30A9BEB68D64">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 02:21:08 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

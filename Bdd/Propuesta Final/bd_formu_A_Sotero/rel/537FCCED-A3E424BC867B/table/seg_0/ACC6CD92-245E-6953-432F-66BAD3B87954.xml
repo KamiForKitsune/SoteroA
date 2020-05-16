@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ACC6CD92-245E-6953-432F-66BAD3B87954" name="CAUSA_PARTO">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:45:18 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<ordsAlias>table_29</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_parto" id="542F9475-282E-C4AC-DBE5-8A51087636AA">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:02 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descrip_parto" id="E01E6520-3579-0DB1-E208-CA41539C8A72">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:31 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="otra" id="6ECFC5AD-6F9E-B720-1C14-0FC8E5DDDE99">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:48 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="177191C6-9BD7-342E-0584-513BBFFE3E32" name="CAUSA_PARTO_PK">
+<createdBy>Elise</createdBy>
+<createdTime>2020-01-19 01:46:02 UTC</createdTime>
+<ownerDesignName>bd_formu_A_Sotero</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="542F9475-282E-C4AC-DBE5-8A51087636AA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
