@@ -224,13 +224,13 @@ body {
 }
 
 .ficha-a__datos-medicos {
-    border-bottom: solid 2px rgba(0, 0, 0, .1);
+    border-bottom: solid 2px var(--color-primary);
     padding-bottom: 3rem;
 }
 
 .ficha-a__datos-medicos__form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     gap: 2rem;
     align-items: start;
     justify-items: stretch;
@@ -243,7 +243,6 @@ body {
 }
 
 .ficha-a__datos-medicos__form__item__title {
-    grid-column: 1 / -1;
     justify-self: center;
     font-size: 1.8rem;
     font-weight: 400;
@@ -251,12 +250,15 @@ body {
 }
 
 .ficha-a__datos-medicos__form__item__select {
-    grid-column: 1 / -1;
     justify-self: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .ficha-a__datos-medicos__form__item__select>select {
-    max-width: 170px;
+    width: 17rem;
+    padding: 3px;
+    justify-self: center;
 }
 
 .lista-pat {
@@ -283,16 +285,36 @@ body {
 
 .ficha-a__medDrogas__form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
     gap: 2rem;
     align-items: start;
 }
 
 .ficha-a__medDrogas__form__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: crimson;
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--color-grey-light-1);
+    padding: 2rem;
+    gap: 1rem;
+}
+
+.ficha-a__medDrogas__form__item__title {
+    justify-self: center;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.ficha-a__medDrogas__form__item__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.ficha-a__medDrogas__form__item__input input {
+    justify-self: end;
 }
 
 .btn:link, .btn:visited, .btn {
@@ -304,12 +326,17 @@ body {
     padding: 5px 10px;
     transition: all .2s ease-out;
     font-weight: 700;
-    font-size: 10px;
+    font-size: 1rem;
     border: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
 }
 
 .btn-azul {
     background-color: var(--color-primary);
+    font-size: 1.5rem;
+    padding: 4px 8px;
 }
 
 .btn-rojo {

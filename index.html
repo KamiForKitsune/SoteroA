@@ -219,7 +219,7 @@
                                 <option value="Enfermedades Cardiacas">Enfermedades Cardiacas</option>
                                 <option value="Enfermedades Renal">Enfermedades Renal</option>
                             </select>
-                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">Añadir</button>
+                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">+</button>
                         </div>
                         <ul class="lista-pat">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
@@ -242,7 +242,7 @@
                                 <option value="Enfermedades Cardiacas">Enfermedades Cardiacas</option>
                                 <option value="Enfermedades Renal">Enfermedades Renal</option>
                             </select>
-                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">Añadir</button>
+                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">+</button>
                         </div>
                         <ul class="lista-pat">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
@@ -263,7 +263,7 @@
                                 <option value="Colelitiasis">Colelitiasis</option>
                                 <option value="Apendicectomia">Apendicectomia</option>
                             </select>
-                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">Añadir</button>
+                            <button class="btnMeterPatologia btn btn-azul btn-añadir-pat">+</button>
                         </div>
                         <ul class="lista-pat">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
@@ -277,41 +277,55 @@
                 <form class="ficha-a__medDrogas__form">
                     <!--Medicamentos cronicos-->
                     <div class="ficha-a__medDrogas__form__item">
-                        <label>Medicamentos cronicos</label>
-                        <input type="checkbox" name="rMedCronico" id="">
-                        <label for="rMedCronico">No</label>
-                        <label class="contRadioButtn">Si, Durante el 1er Trimestre <input type="checkbox"
-                                name="rMedCronico" id=""><span class="radioBtn"></span> </label>
-                        <label class="contRadioButtn">Si, Despues del 1er Trimestre <input type="checkbox"
-                                name="rMedCronico" id=""><span class="radioBtn"></span> </label>
-                        <label class="contRadioButtn">No sabe <input type="checkbox" name="rMedCronico" id=""><span
-                                class="radioBtn"></span> </label>
-                        <label for="">Otro</label>
-                        <input type="text" name="" id="Mejorar">
+                        <label class="ficha-a__medDrogas__form__item__title">Medicamentos cronicos</label>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label for="rMedCronico">No</label>
+                            <input type="checkbox" name="rMedCronico" id="">
+                        </div>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">Si, Durante el 1er Trimestre</label>
+                            <input type="checkbox" name="rMedCronico" id="">
+                        </div>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">Si, Despues del 1er Trimestre </label>
+                            <input type="checkbox" name="rMedCronico" id="">
+                        </div>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">No sabe </label>
+                            <input type="checkbox" name="rMedCronico" id="">
+                        </div>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label for="">Otro</label>
+                            <input type="text" name="" id="Mejorar">
+                        </div>
+
                         <!--Como creo un ComboBox Que cuando selecciono uno, pueda con otro boton "+" Por ejemplo que se active otro combobox igual al otro y me permita listar detallar los medicamentos Cronicos?-->
                     </div>
 
                     <!-- Cigarrilos / Alcohol -->
                     <div class="ficha-a__medDrogas__form__item">
-                        <div class="col-25">
-
-                            <label>Cigarrilos por dia</label>
-                            <label class="contRadioButtn">No <input type="radio" name="rCigarrillo" id=""><span
-                                    class="radioBtn"></span> </label>
-                            <label class="contRadioButtn">Ocasional<input type="radio" name="rCigarrillo" id=""><span
-                                    class="radioBtn"></span> </label>
-                            <input type="number" name="" id="tAlcohol">
-
+                        <label class="ficha-a__medDrogas__form__item__title">Cigarrilos por dia</label>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">No </label>
+                            <input type="radio" name="rCigarrillo" id=""></span>
                         </div>
-                        <div class="col-25">
-                            <label">Alcohol/dia(Copa vino)</label>
-
-                                <label class="contRadioButtn">No <input type="radio" name="rAlcohol" id=""><span
-                                        class="radioBtn"></span> </label>
-                                <label class="contRadioButtn">Ocasional<input type="radio" name="rAlcohol" id=""><span
-                                        class="radioBtn"></span> </label>
-                                <input type="number" name="" id="tAlcohol">
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">Ocasional</label>
+                            <input type="radio" name="rCigarrillo" id="">
                         </div>
+                        <input type="number" name="" id="tAlcohol">
+
+                        <label class="ficha-a__medDrogas__form__item__title">Alcohol/dia(Copa vino)</label>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">No</label>
+                            <input type="radio" name="rAlcohol" id="">
+                        </div>
+                        <div class="ficha-a__medDrogas__form__item__input">
+                            <label class="contRadioButtn">Ocasional</label>
+                            <input type="radio" name="rAlcohol" id="">
+                        </div>
+                        <input type="text" name="" id="tAlcohol">
+
                     </div>
 
                     <!-- Drogas -->
