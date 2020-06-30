@@ -1,8 +1,12 @@
-document.querySelectorAll(".btn-añadir-pat").forEach((item) => {
+document.querySelectorAll(".btn-añadir-a-lista").forEach((item) => {
   item.addEventListener("click", addPatV2);
 });
 
 document.querySelectorAll(".lista-pat").forEach((item) => {
+  item.addEventListener("click", eliminarPat);
+});
+// TEST --- BORRAR
+document.querySelectorAll(".lista-drogas").forEach((item) => {
   item.addEventListener("click", eliminarPat);
 });
 

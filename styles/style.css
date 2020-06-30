@@ -285,7 +285,7 @@ body {
 
 .ficha-a__medDrogas__form {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(23rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
     gap: 2rem;
     align-items: start;
 }
@@ -317,6 +317,10 @@ body {
     justify-self: end;
 }
 
+.ficha-a__medDrogas__form__item__input input[type=text] {
+    width: 100%;
+}
+
 .btn:link, .btn:visited, .btn {
     max-width: 50px;
     text-decoration: none;
@@ -331,6 +335,22 @@ body {
     user-select: none;
     cursor: pointer;
     outline: 0;
+}
+
+.ficha-a__medDrogas__form__item__title {
+    justify-self: center;
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.ficha-a__medDrogas__form__item__lista-drogas__select {
+    text-align: center;
+}
+
+.ficha-a__medDrogas__form__item__lista-drogas__select>select {
+    width: 17rem;
+    padding: 3px;
 }
 
 .btn-azul {
@@ -357,11 +377,11 @@ body {
     box-shadow: 0px 3.5px 2.5px rgba(0, 0, 0, .2);
 }
 
-.btn-añadir-pat:hover {
+.btn-añadir-a-lista:hover {
     transform: translate(0, -2px);
     box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
 }
 
-.btn-añadir-pat:active {
+.btn-añadir-a-lista:active {
     box-shadow: 0px 3.5px 2.5px rgba(0, 0, 0, .2);
 }
