@@ -204,9 +204,9 @@
             <div class="ficha-a__datos-medicos">
                 <form class="ficha-a__datos-medicos__form">
                     <!-- Patologia Familiar-->
-                    <div class="ficha-a__datos-medicos__form__item">
-                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Familiar</label>
-                        <div class="ficha-a__datos-medicos__form__item__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Patologia Familiar</label>
+                        <div class="lista-interactiva__select">
                             <select id="patoFam">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Diabetes">Diabetes</option>
@@ -221,15 +221,15 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-pat">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
                     </div>
 
                     <!-- Patologia Medica-->
-                    <div class="ficha-a__datos-medicos__form__item">
-                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Medica</label>
-                        <div class="ficha-a__datos-medicos__form__item__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Patologia Medica</label>
+                        <div class="lista-interactiva__select">
                             <select id="patoFam">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Diabetes">Diabetes</option>
@@ -244,15 +244,15 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-pat">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
                     </div>
 
                     <!-- Patologia Quirurjica-->
-                    <div class="ficha-a__datos-medicos__form__item">
-                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Quirurgica</label>
-                        <div class="ficha-a__datos-medicos__form__item__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Patologia Quirurgica</label>
+                        <div class="lista-interactiva__select">
                             <select id="patoFam">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Cono">Cono</option>
@@ -265,7 +265,7 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-pat">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
                     </div>
@@ -336,9 +336,9 @@
                     </div>
 
                     <!-- Drogas -->
-                    <div class="ficha-a__medDrogas__form__item">
-                        <label class="ficha-a__medDrogas__form__item__title">Drogas</label>
-                        <div class="ficha-a__medDrogas__form__item__lista-drogas__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Drogas</label>
+                        <div class="lista-interactiva__select">
                             <select id="drogas">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Cocaina">Cocaina</option>
@@ -349,7 +349,7 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-drogas">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
 
@@ -358,6 +358,146 @@
 
                     </div>
                 </form>
+            </div>
+
+            <div class="ficha-a__antecedentes-obstetricos">
+                <span class="ficha-a__antecedentes-obstetricos__title">Antecedentes Obstetricos</span>
+
+                <form class="ficha-a__antecedentes-obstetricos__form">
+                    <!-- Anticoncepcion -->
+                    <div class="ficha-a__antecedentes-obstetricos__form__item">
+                        <span class="ficha-a__antecedentes-obstetricos__form__item__title">Anticoncepcion</span>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="antiConNatural">Natural</label>
+                            <input type="radio" name="antiConNatural" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="antiConDIU">D.I.U</label>
+                            <input type="radio" name="antiConDIU" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="antiConOral">Oral</label>
+                            <input type="radio" name="antiConOral" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="antiConNo">No</label>
+                            <input type="radio" name="antiConNo" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="antiConOtro">Otro</label>
+                            <input type="text" name="antiConOtro" id="">
+                        </div>
+                    </div>
+                    <!-- Embarazos Previos -->
+                    <div class="ficha-a__antecedentes-obstetricos__form__item">
+                        <span class="ficha-a__antecedentes-obstetricos__form__item__title">Embarazos Previos</span>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Normales</label>
+                            <input type="radio" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevMalaHist">Mala historia obstetrica</label>
+                            <input type="checkbox" name="embarazoPrevMalaHist" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevPreeclampsia">Preeclampsia</label>
+                            <input type="checkbox" name="embarazoPrevPreeclampsia" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevDiabetesGestacional">Diabetes Gestacional</label>
+                            <input type="checkbox" name="embarazoPrevDiabetesGestacional" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNMalFormSNC">RN con malform. SNC</label>
+                            <input type="checkbox" name="embarazoPrevRNMalFormSNC" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNMalFormCard">RN con malform. cardiaca</label>
+                            <input type="checkbox" name="embarazoPrevRNMalFormCard" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNDown">RN Down</label>
+                            <input type="checkbox" name="embarazoPrevRNDown" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNOtraMalForm">RN con otra malformación</label>
+                            <input type="checkbox" name="embarazoPrevRNOtraMalForm" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevOtra">Otra:</label>
+                            <input type="text" name="embarazoPrevOtra" id="">
+                        </div>
+
+                    </div>
+                    <!-- Embarazo Ectopico -->
+                    <div class="ficha-a__antecedentes-obstetricos__form__item" id="embarazo-ectopico">
+                        <span class="ficha-a__antecedentes-obstetricos__form__item__title">Embarazo Ectopico</span>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">AE</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">AE</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">AP</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Ppr</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Pter</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">MNat</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Mneo</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Hv</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Embarazos Ectópicos</label>
+                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+
             </div>
         </div>
     </div>

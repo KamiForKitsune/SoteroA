@@ -1,16 +1,8 @@
 document.querySelectorAll(".btn-añadir-a-lista").forEach((item) => {
-  item.addEventListener("click", addPatV2);
+  item.addEventListener("click", addLiLista);
 });
 
-document.querySelectorAll(".lista-pat").forEach((item) => {
-  item.addEventListener("click", eliminarPat);
-});
-// TEST --- BORRAR
-document.querySelectorAll(".lista-drogas").forEach((item) => {
-  item.addEventListener("click", eliminarPat);
-});
-
-function addPatV2(e) {
+function addLiLista(e) {
   // Selecciona la lista de patologias asociada a el boton clickeado
   let listaPatologias = e.target.parentElement.parentElement.getElementsByTagName(
     "ul"
@@ -28,9 +20,10 @@ function addPatV2(e) {
 
   // Crea el nuevo elemto 'li'
   const li = document.createElement("li");
-  li.classList = "li-pat";
+  li.classList = "lista-interactiva__lista__li";
   li.innerHTML =
     patSelection + '<a href="#" class="btn btn-rojo btn-eliminar-pat">x</a>';
+  li.addEventListener("click", eliminarLiLista);
 
   // Revisa si una patologia con el mismo nombre ya existe en la lista
   let patExiste = 0;
@@ -50,7 +43,7 @@ function addPatV2(e) {
   e.preventDefault();
 }
 
-function eliminarPat(e) {
+function eliminarLiLista(e) {
   if (Array.from(e.target.classList).includes("btn-eliminar-pat")) {
     e.target.parentElement.remove();
   }

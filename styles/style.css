@@ -236,38 +236,38 @@ body {
     justify-items: stretch;
 }
 
-.ficha-a__datos-medicos__form__item {
+.lista-interactiva {
     display: grid;
     padding: 20px;
     background-color: var(--color-grey-light-1);
 }
 
-.ficha-a__datos-medicos__form__item__title {
+.lista-interactiva__title {
     justify-self: center;
     font-size: 1.8rem;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.ficha-a__datos-medicos__form__item__select {
+.lista-interactiva__select {
     justify-self: center;
     justify-content: center;
     text-align: center;
 }
 
-.ficha-a__datos-medicos__form__item__select>select {
+.lista-interactiva__select>select {
     width: 17rem;
     padding: 3px;
     justify-self: center;
 }
 
-.lista-pat {
+.lista-interactiva__lista {
     padding: 1.5rem 0px 0px 0px;
     list-style: none;
     text-align: left;
 }
 
-.li-pat {
+.lista-interactiva__lista__li {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -352,6 +352,51 @@ body {
     width: 17rem;
     padding: 3px;
 }
+
+.ficha-a__antecedentes-obstetricos {
+    display: grid;
+    background-color: var(--color-grey-light-1);
+}
+
+.ficha-a__antecedentes-obstetricos__title {
+    font-size: 2.5rem;
+    text-align: center;
+    grid-column: 1/-1;
+}
+
+.ficha-a__antecedentes-obstetricos__form {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 2rem;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    height: fit-content;
+    background-color: var(--color-grey-light-2);
+    padding: 2rem;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item__title {
+    font-size: 1.8rem;
+    justify-self: center;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item__input>input {
+    justify-self: end;
+}
+
+#embarazo-ectopico {}
 
 .btn-azul {
     background-color: var(--color-primary);
