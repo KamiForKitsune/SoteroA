@@ -2,6 +2,16 @@ document.querySelectorAll(".btn-añadir-a-lista").forEach((item) => {
   item.addEventListener("click", addLiLista);
 });
 
+document
+  .querySelector("#ppr")
+  .getElementsByTagName("input")[0]
+  .addEventListener("click", habilitarSeccOpcionalEmbarazo);
+
+document
+  .querySelector("#pter")
+  .getElementsByTagName("input")[0]
+  .addEventListener("click", habilitarSeccOpcionalEmbarazo);
+
 function addLiLista(e) {
   // Selecciona la lista de patologias asociada a el boton clickeado
   let listaPatologias = e.target.parentElement.parentElement.getElementsByTagName(
@@ -81,4 +91,60 @@ function addPatFam(e) {
   }
 
   e.preventDefault();
+}
+
+function habilitarSeccOpcionalEmbarazo(e) {
+  const ppr = document.querySelector("#ppr").getElementsByTagName("input")[0];
+  const pter = document.querySelector("#pter").getElementsByTagName("input")[0];
+
+  const seccionOpcional = document.querySelector(
+    ".ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional"
+  );
+
+  let seccionOpcionalInputs = [];
+  let seccionOpcionalCausasInputs = [];
+
+  for (const i of seccionOpcional.children) {
+    for (const x of i.children) {
+      if (x.tagName == "INPUT") {
+        seccionOpcionalInputs.push(x);
+      }
+    }
+  }
+  for (const i of document.querySelector(
+    ".ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa"
+  ).children) {
+    for (const x of i.children) {
+      if (x.tagName == "INPUT") {
+        seccionOpcionalCausasInputs.push(x);
+      }
+    }
+  }
+  console.log(seccionOpcionalCausasInputs);
+  let activarSeccionOpcional;
+
+  if (ppr.checked || pter.checked) {
+    activarSeccionOpcional = true;
+  } else {
+    activarSeccionOpcional = false;
+  }
+
+  if (activarSeccionOpcional) {
+    for (const i of seccionOpcionalInputs) {
+      i.disabled = false;
+    }
+    for (const i of seccionOpcionalCausasInputs) {
+      i.disabled = false;
+    }
+
+    seccionOpcional.color;
+  } else {
+    seccionOpcional.fontColor;
+    for (const i of seccionOpcionalInputs) {
+      i.disabled = true;
+    }
+    for (const i of seccionOpcionalCausasInputs) {
+      i.disabled = true;
+    }
+  }
 }

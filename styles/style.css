@@ -281,6 +281,8 @@ body {
 
 .ficha-a__medDrogas {
     display: grid;
+    border-bottom: solid 2px var(--color-primary);
+    padding-bottom: 3rem;
 }
 
 .ficha-a__medDrogas__form {
@@ -355,7 +357,6 @@ body {
 
 .ficha-a__antecedentes-obstetricos {
     display: grid;
-    background-color: var(--color-grey-light-1);
 }
 
 .ficha-a__antecedentes-obstetricos__title {
@@ -376,7 +377,7 @@ body {
     grid-template-columns: 1fr;
     gap: 1rem;
     height: fit-content;
-    background-color: var(--color-grey-light-2);
+    background-color: var(--color-grey-light-1);
     padding: 2rem;
 }
 
@@ -396,7 +397,83 @@ body {
     justify-self: end;
 }
 
-#embarazo-ectopico {}
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-row: 2/3;
+    grid-column: 1/-1;
+    height: fit-content;
+    background-color: var(--color-grey-light-1);
+    padding: 2rem;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__title {
+    font-size: 1.8rem;
+    justify-self: center;
+    grid-column: 1/-1;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    grid-column: 1/2;
+    min-width: 20rem;
+}
+
+#ppr, #pter {
+    background-color: var(--color-bright);
+    justify-self: center;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional {
+    grid-column: 2/-1;
+    grid-row: 2/11;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
+    background-color: var(--color-bright);
+    /*color: rgba(0, 0, 0, .4)*/
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input {
+    display: grid;
+    text-align: center;
+    justify-items: center;
+}
+
+#rn-mayor-peso {
+    grid-column: 1/-1;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input input[type=text] {
+    /*height: 3rem;*/
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input input[type=checkbox] {
+    height: 1.5rem;
+    width: 100%;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa {
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1fr;
+    background-color: var(--color-grey-light-1);
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input input {
+    justify-self: center;
+}
 
 .btn-azul {
     background-color: var(--color-primary);
