@@ -12,16 +12,30 @@
 
 <body class="container">
     <div class="navbar">
+        <div class="navbar-sticky-area">
+            <div class="profile">
+                <img class="profile__icon" src="../img/profile_pic.png" alt="">
+                <span class="profile__user-name">Dr. Sótero Ríos</span>
+            </div>
+
+            <ul class="navbar-links">
+                <a href="#" class="navbar-button" id="navbar-selected">Ficha A</a>
+                <a href="#" class="navbar-button">Ficha B</a>
+                <a href="#" class="navbar-button">Ficha C</a>
+            </ul>
+        </div>
+        <!--
         <div class="profile">
             <img class="profile__icon" src="../img/profile_pic.png" alt="">
             <span class="profile__user-name">Ranaflex Gondolin</span>
         </div>
 
         <ul class="navbar-links">
-            <a href="#" class="navbar-button">Ficha A</a>
+            <a href="#" class="navbar-button" id="navbar-selected">Ficha A</a>
             <a href="#" class="navbar-button">Ficha B</a>
             <a href="#" class="navbar-button">Ficha C</a>
         </ul>
+        -->
     </div>
     <div class="content">
         <!-- Formulario info personal-->
@@ -449,50 +463,57 @@
                         <span class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__title">Embarazo
                             Ectopico</span>
 
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">AE</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
+                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__seccion-input">
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">AE</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">AE</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">AP</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input"
+                                id="ppr">
+                                <label for="embarazoPrevNormales">Ppr</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input"
+                                id="pter">
+                                <label for="embarazoPrevNormales">Pter</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">MNat</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">Mneo</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">Hv</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">Embarazos Ectópicos</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <!--DADADADADADADADADADADADADAD-->
                         </div>
 
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">AE</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">AP</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input" id="ppr">
-                            <label for="embarazoPrevNormales">Ppr</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input" id="pter">
-                            <label for="embarazoPrevNormales">Pter</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">MNat</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">Mneo</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">Hv</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
-
-                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
-                            <label for="embarazoPrevNormales">Embarazos Ectópicos</label>
-                            <input type="checkbox" name="embarazoPrevNormales" id="">
-                        </div>
                         <!--Seccion Opcional-->
                         <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional">
                             <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input"
@@ -548,10 +569,8 @@
                             </div>
 
                         </div>
-
-
                     </div>
-
+                    <!--DADADADADADADADADADADADADAD-->
 
                 </form>
 
