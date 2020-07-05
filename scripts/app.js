@@ -137,7 +137,9 @@ function habilitarSeccOpcionalEmbarazo(e) {
       i.disabled = false;
     }
 
-    seccionOpcional.color;
+    seccionOpcional.classList.remove(
+      "ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional--inactive"
+    );
   } else {
     seccionOpcional.fontColor;
     for (const i of seccionOpcionalInputs) {
@@ -146,5 +148,15 @@ function habilitarSeccOpcionalEmbarazo(e) {
     for (const i of seccionOpcionalCausasInputs) {
       i.disabled = true;
     }
+
+    seccionOpcional.classList.add(
+      "ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional--inactive"
+    );
   }
 }
+
+function runTimeFunctions() {
+  habilitarSeccOpcionalEmbarazo();
+}
+
+runTimeFunctions();
