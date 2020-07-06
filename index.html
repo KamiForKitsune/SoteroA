@@ -12,16 +12,30 @@
 
 <body class="container">
     <div class="navbar">
+        <div class="navbar-sticky-area">
+            <div class="profile">
+                <img class="profile__icon" src="../img/profile_pic.png" alt="">
+                <span class="profile__user-name">Dr. Sótero Ríos</span>
+            </div>
+
+            <ul class="navbar-links">
+                <a href="#" class="navbar-button" id="navbar-selected">Ficha A</a>
+                <a href="#" class="navbar-button">Ficha B</a>
+                <a href="#" class="navbar-button">Ficha C</a>
+            </ul>
+        </div>
+        <!--
         <div class="profile">
             <img class="profile__icon" src="../img/profile_pic.png" alt="">
             <span class="profile__user-name">Ranaflex Gondolin</span>
         </div>
 
         <ul class="navbar-links">
-            <a href="#" class="navbar-button">Ficha A</a>
+            <a href="#" class="navbar-button" id="navbar-selected">Ficha A</a>
             <a href="#" class="navbar-button">Ficha B</a>
             <a href="#" class="navbar-button">Ficha C</a>
         </ul>
+        -->
     </div>
     <div class="content">
         <!-- Formulario info personal-->
@@ -204,9 +218,9 @@
             <div class="ficha-a__datos-medicos">
                 <form class="ficha-a__datos-medicos__form">
                     <!-- Patologia Familiar-->
-                    <div class="ficha-a__datos-medicos__form__item">
-                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Familiar</label>
-                        <div class="ficha-a__datos-medicos__form__item__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Patologia Familiar</label>
+                        <div class="lista-interactiva__select">
                             <select id="patoFam">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Diabetes">Diabetes</option>
@@ -221,15 +235,15 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-pat">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
                     </div>
 
                     <!-- Patologia Medica-->
-                    <div class="ficha-a__datos-medicos__form__item">
-                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Medica</label>
-                        <div class="ficha-a__datos-medicos__form__item__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Patologia Medica</label>
+                        <div class="lista-interactiva__select">
                             <select id="patoFam">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Diabetes">Diabetes</option>
@@ -244,15 +258,15 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-pat">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
                     </div>
 
                     <!-- Patologia Quirurjica-->
-                    <div class="ficha-a__datos-medicos__form__item">
-                        <label class="ficha-a__datos-medicos__form__item__title">Patologia Quirurgica</label>
-                        <div class="ficha-a__datos-medicos__form__item__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Patologia Quirurgica</label>
+                        <div class="lista-interactiva__select">
                             <select id="patoFam">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Cono">Cono</option>
@@ -265,7 +279,7 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-pat">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
                     </div>
@@ -336,9 +350,9 @@
                     </div>
 
                     <!-- Drogas -->
-                    <div class="ficha-a__medDrogas__form__item">
-                        <label class="ficha-a__medDrogas__form__item__title">Drogas</label>
-                        <div class="ficha-a__medDrogas__form__item__lista-drogas__select">
+                    <div class="lista-interactiva">
+                        <label class="lista-interactiva__title">Drogas</label>
+                        <div class="lista-interactiva__select">
                             <select id="drogas">
                                 <option value="Ninguna">Ninguna</option>
                                 <option value="Cocaina">Cocaina</option>
@@ -349,7 +363,7 @@
                             </select>
                             <button class="btn btn-azul btn-añadir-a-lista">+</button>
                         </div>
-                        <ul class="lista-drogas">
+                        <ul class="lista-interactiva__lista">
                             <!--<li class="li-pat">Diabetes <a href="#" class="btn eliminar-pat">x</a> </li>-->
                         </ul>
 
@@ -358,6 +372,288 @@
 
                     </div>
                 </form>
+            </div>
+
+            <!--Antecedentes Obstetricos-->
+            <div class="ficha-a__antecedentes-obstetricos">
+                <span class="ficha-a__antecedentes-obstetricos__title">Antecedentes Obstetricos</span>
+
+                <form class="ficha-a__antecedentes-obstetricos__form">
+                    <!-- Anticoncepcion -->
+                    <div class="ficha-a__antecedentes-obstetricos__form__item">
+                        <span class="ficha-a__antecedentes-obstetricos__form__item__title">Anticoncepcion</span>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="natural">Natural</label>
+                            <input type="radio" value="natural" id="" name="anticonceptivo">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="DIU">D.I.U</label>
+                            <input type="radio" value="DIU" id="" name="anticonceptivo">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="oral">Oral</label>
+                            <input type="radio" value="oral" id="" name="anticonceptivo">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="no">No</label>
+                            <input type="radio" value="no" id="" name="anticonceptivo">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="anticonceptivoOtro">Otro</label>
+                            <input type="text" id="" name="anticonceptivoOtro">
+                        </div>
+                    </div>
+                    <!-- Embarazos Previos -->
+                    <div class="ficha-a__antecedentes-obstetricos__form__item">
+                        <span class="ficha-a__antecedentes-obstetricos__form__item__title">Embarazos Previos</span>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevNormales">Normales</label>
+                            <input type="radio" value="normales" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevMalaHist">Mala historia obstetrica</label>
+                            <input type="checkbox" value="mala historia obstetrica" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevPreeclampsia">Preeclampsia</label>
+                            <input type="checkbox" value="preeclampsia" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevDiabetesGestacional">Diabetes Gestacional</label>
+                            <input type="checkbox" value="diabetes gestacional" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNMalFormSNC">RN con malform. SNC</label>
+                            <input type="checkbox" value="rn con malform. snc" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNMalFormCard">RN con malform. cardiaca</label>
+                            <input type="checkbox" value="rn con malform. cardiaca" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNDown">RN Down</label>
+                            <input type="checkbox" value="rn down" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevRNOtraMalForm">RN con otra malformación</label>
+                            <input type="checkbox" value="rn con otra malformacion" id="">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item__input">
+                            <label for="embarazoPrevOtra">Otra</label>
+                            <input type="text" name="embarazoPrevOtra" id="">
+                        </div>
+
+                    </div>
+                    <!-- Embarazo Ectopico -->
+                    <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico"
+                        id="embarazo-ectopico">
+                        <span class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__title">Embarazo
+                            Ectopico</span>
+
+                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__seccion-input">
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">AE</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">AE</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">AP</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input"
+                                id="ppr">
+                                <label for="embarazoPrevNormales">Ppr</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input"
+                                id="pter">
+                                <label for="embarazoPrevNormales">Pter</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">MNat</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">Mneo</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">Hv</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico__input">
+                                <label for="embarazoPrevNormales">Embarazos Ectópicos</label>
+                                <input type="checkbox" name="embarazoPrevNormales" id="">
+                            </div>
+
+
+                        </div>
+
+                        <!--Seccion Opcional-->
+                        <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional">
+                            <div class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input"
+                                id="rn-mayor-peso">
+                                <label for="rnMayorPeso">RN de mayor peso</label>
+                                <input type="text" name="rnMayorPeso" id="" placeholder="grs.">
+                            </div>
+
+                            <div
+                                class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input">
+                                <label for="cesareasPrevias">Cesareas Previas</label>
+                                <input type="checkbox" name="cesareasPrevias" value="cesareas previas"
+                                    id="cesareas-previas">
+                            </div>
+
+                            <div
+                                class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__input">
+                                <label for="embarazosGemelares">Embarazos Gemelares</label>
+                                <input type="checkbox" name="embarazosGemelares" value="embarazos gemelares"
+                                    id="embarazos-gemelares">
+                            </div>
+
+                            <div
+                                class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa">
+                                <div
+                                    class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__title">
+                                    Causa</div>
+                                <div
+                                    class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input">
+                                    <label for="trabajoParto">Trabajo de Parto</label>
+                                    <input type="checkbox" name="trabajoParto" value="trabajo parto">
+                                </div>
+
+                                <div
+                                    class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input">
+                                    <label for="parto-menor-32-semanas">Parto &lt32 semanas</label>
+                                    <input type="checkbox" name="parto-menor-32-semanas" value="parto menor 32 semanas">
+                                </div>
+
+                                <div
+                                    class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input">
+                                    <label for="distocia-presentacion">Distocia de presentación</label>
+                                    <input type="checkbox" name="distocia-presentacion" value="distocia presentacion">
+                                </div>
+
+                                <div
+                                    class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input">
+                                    <label for="no-sabe">No sabe</label>
+                                    <input type="checkbox" name="no-sabe" value="no sabe">
+                                </div>
+
+                                <div
+                                    class="ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa__input">
+                                    <label for="otra">Otra</label>
+                                    <input type="checkbox" name="otra" value="otra">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+            <!--Antecedentes Embarazo Actual-->
+            <div class="ficha-a__antecedentes-embarazo-actual">
+                <span class="ficha-a__antecedentes-embarazo-actual__title">Antecedentes Embarazo Actual</span>
+
+                <form class="ficha-a__antecedentes-embarazo-actual__form">
+                    <!-- Control Prenatal -->
+                    <div class="ficha-a__antecedentes-embarazo-actual__form__item">
+                        <span class="ficha-a__antecedentes-embarazo-actual__form__item__title">Control Prenatal</span>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input">
+                            <label for="inicio-semanas">Inicio &#40;sem.&#41;</label>
+                            <input type="number" id="" name="inicio-semanas">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input">
+                            <label for="nro-controles">N° controles</label>
+                            <input type="number" id="" name="nro-controles">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input">
+                            <label for="peso-normal">Peso normal &#40;Kgs.&#41;</label>
+                            <input type="number" id="" name="peso-normal">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input">
+                            <label for="talla">Talla &#40;cms&#41;</label>
+                            <input type="number" id="" name="talla">
+                        </div>
+                    </div>
+
+                    <!-- Control Prenatal -->
+                    <div class="ficha-a__antecedentes-embarazo-actual__form__item">
+                        <span class="ficha-a__antecedentes-embarazo-actual__form__item__title">F.U.R</span>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input--date">
+                            <label for="fur">Fecha última regla</label>
+                            <input type="date" id="" name="fur">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input">
+                            <label for="fur-no-confiable">F.U.R no confiable o no segura</label>
+                            <input type="checkbox" id="" name="fur-no-confiable" value="fur no confiable">
+                        </div>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item--primera-ecografia">
+                            <span class="ficha-a__antecedentes-embarazo-actual__form__item__title">Primera
+                                Ecografía</span>
+                            <div class="ficha-a__antecedentes-embarazo-actual__form__item__input--date">
+                                <label for="fur">Fecha</label>
+                                <input type="date" id="" name="fur">
+                            </div>
+
+                            <div class="ficha-a__antecedentes-embarazo-actual__form__item__input">
+                                <label for="edad-gestacional">Edad Gestacional</label>
+                                <input type="number" id="" name="edad-gestacional">
+                            </div>
+                        </div>
+
+                        <div class="ficha-a__antecedentes-embarazo-actual__form__item__input--date">
+                            <label for="fur">F.U.R Operacional</label>
+                            <input type="date" id="" name="fur">
+                        </div>
+                    </div>
+
+
+                </form>
+
+
+            </div>
+
+            <div class="ficha-a__seccion-btn-global">
+                <div class="btn-ingresar-datos">Ingresar Datos</div>
             </div>
         </div>
     </div>
