@@ -25,9 +25,10 @@ html {
     --font-primary: 'Lato', sans-serif;
     --font-color-black: #131313;
     --font-color-grey: #a3a3a3;
+    --font-color-white: #ffffff;
     --font-color-primary: #5680f9;
     /* Breakpoints */
-    --bp-largest: 53em;
+    --bp-largest: 73em;
     @media only screen and (max-width: --bp-largest) {
         font-size: 500px;
     }
@@ -110,9 +111,10 @@ body {
 #navbar-selected {
     color: var(--color-white);
     background-color: var(--color-primary);
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, .15)
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1166px) {
     .container {
         grid-template-columns: 1fr;
         grid-template-rows: 8rem minmax(100vh, max-content);
@@ -174,7 +176,8 @@ body {
     background-color: var(--color-light-blue);
     padding: 4rem 8rem 4rem 8rem;
     display: grid;
-    grid-template-columns: 100%;
+    grid-template-columns: 82.5%;
+    justify-content: center;
     grid-template-rows: min-content;
 }
 
@@ -405,11 +408,13 @@ body {
 
 .ficha-a__antecedentes-obstetricos {
     display: grid;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.08);
+    padding-bottom: 2rem;
 }
 
 .ficha-a__antecedentes-obstetricos__title {
     grid-column: 1/-1;
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 400;
     margin-bottom: 3rem;
     padding: 2rem 0px 2rem 1.8rem;
@@ -455,7 +460,7 @@ body {
 }
 
 .ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico {
-    grid-row: 2/3;
+    grid-row: 3/4;
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -577,6 +582,89 @@ body {
     justify-self: center;
 }
 
+/* ---------- Antecedentes Embarazo Actual ---------- */
+
+.ficha-a__antecedentes-embarazo-actual {
+    display: grid;
+    padding-bottom: 2rem;
+}
+
+.ficha-a__antecedentes-embarazo-actual__title {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 3rem;
+    padding: 2rem 0px 2rem 1.8rem;
+    /* border-bottom: solid 2px rgba(0, 0, 0, .1); */
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.08);
+    text-align: center;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    /*grid-template-columns: 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+    gap: 2rem;
+    padding: 2rem 3rem 2rem 3rem;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    height: fit-content;
+    box-shadow: 0px 5px 5px var(--color-grey-light-1);
+    border-radius: 1rem;
+    border: 2px solid var(--color-grey-light-1);
+    padding: 2rem;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item__title {
+    font-size: 1.8rem;
+    justify-self: center;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item__input {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item__input--date {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item--primera-ecografia {
+    display: grid;
+    gap: 2rem;
+    background-color: var(--color-grey-light-1);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, .2);
+    padding: 1rem;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item__input input {
+    justify-self: end;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item__input input[type=number] {
+    width: 6rem;
+}
+
+.ficha-a__antecedentes-embarazo-actual__form__item__input input[type=date] {
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+}
+
+.ficha-a__seccion-btn-global {
+    border-top: 2px solid rgba(0, 0, 0, .1);
+}
+
+/* ---------- Botones ---------- */
+
 .btn:link, .btn:visited, .btn {
     max-width: 50px;
     text-decoration: none;
@@ -628,4 +716,32 @@ body {
 
 .btn-añadir-a-lista:active {
     box-shadow: 0px 3.5px 2.5px rgba(0, 0, 0, .2);
+}
+
+.btn-ingresar-datos {
+    background-color: var(--color-primary);
+    color: var(--font-color-white);
+    font-family: var(--font-primary);
+    font-size: 1.7rem;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 1rem 1.5rem;
+    width: max-content;
+    margin: 2rem auto 2rem auto;
+    border-radius: 1rem;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, .2);
+    transition: all .15s ease-out;
+}
+
+.btn-ingresar-datos:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 5px 6px rgba(0, 0, 0, .2);
+}
+
+.btn-ingresar-datos:active {
+    transform: translateY(2px);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, .4);
 }
