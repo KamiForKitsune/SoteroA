@@ -244,7 +244,7 @@ body {
 
 .ficha-a__antecedentes {
     padding-bottom: 4rem;
-    border-bottom: solid 2px var(--color-primary);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.08);
 }
 
 .ficha-a__antecedentes__form {
@@ -266,7 +266,7 @@ body {
 }
 
 .ficha-a__datos-medicos {
-    border-bottom: solid 2px var(--color-primary);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.08);
     padding: 4rem 3rem 4rem 3rem;
 }
 
@@ -317,6 +317,7 @@ body {
 }
 
 .lista-interactiva__lista__li {
+    /*
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -324,15 +325,25 @@ body {
     text-transform: capitalize;
     background-color: white;
     padding: 0px 5px;
+    height: max-content;
     color: black;
+    font-size: 2rem;
+    /*border: 1px solid rgba(0, 0, 0, .1)
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .15)*/
+    display: grid;
     font-size: 1.4rem;
-    /*border: 1px solid rgba(0, 0, 0, .1);*/
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, .15)
+    grid-template-columns: 90% 1fr;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    background-color: white;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .15)
 }
 
 .ficha-a__medDrogas {
     display: grid;
-    border-bottom: solid 2px var(--color-primary);
+    border-bottom: solid 2px rgba(0, 0, 0, 0.08);
     padding: 4rem 3rem 4rem 3rem;
 }
 
@@ -374,22 +385,6 @@ body {
 
 .ficha-a__medDrogas__form__item__input input[type=text] {
     width: 100%;
-}
-
-.btn:link, .btn:visited, .btn {
-    max-width: 50px;
-    text-decoration: none;
-    position: relative;
-    right: -10px;
-    color: white;
-    padding: 5px 10px;
-    transition: all .2s ease-out;
-    font-weight: 700;
-    font-size: 1rem;
-    border: none;
-    user-select: none;
-    cursor: pointer;
-    outline: 0;
 }
 
 .ficha-a__medDrogas__form__item__title {
@@ -582,6 +577,21 @@ body {
     justify-self: center;
 }
 
+.btn:link, .btn:visited, .btn {
+    max-width: 50px;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    padding: 5px 10px;
+    transition: all .2s ease-out;
+    font-weight: 700;
+    font-size: 1rem;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+    outline: 0;
+}
+
 .btn-azul {
     background-color: var(--color-primary);
     font-size: 1.5rem;
@@ -594,13 +604,17 @@ body {
 
 .btn-eliminar-pat {
     font-weight: 900;
+    height: 100%;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, .13);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-eliminar-pat:hover {
-    padding-left: 25px;
     text-transform: capitalize;
-    box-shadow: 0px 5px 3.5px rgba(0, 0, 0, .1);
+    padding-left: 15px;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, .2);
 }
 
 .btn-eliminar-pat:active {
