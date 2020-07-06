@@ -12,6 +12,13 @@ document
   .getElementsByTagName("input")[0]
   .addEventListener("click", habilitarSeccOpcionalEmbarazo);
 
+document
+  .querySelector("#cesareas-previas")
+  .addEventListener("click", habilitarSeccOpcionalEmbarazo);
+document
+  .querySelector("#embarazos-gemelares")
+  .addEventListener("click", habilitarSeccOpcionalEmbarazo);
+
 function addLiLista(e) {
   // Selecciona la lista de patologias asociada a el boton clickeado
   let listaPatologias = e.target.parentElement.parentElement.getElementsByTagName(
@@ -94,13 +101,25 @@ function addPatFam(e) {
 }
 
 function habilitarSeccOpcionalEmbarazo(e) {
+  // Inputs que activan la seccion opcional
   const ppr = document.querySelector("#ppr").getElementsByTagName("input")[0];
   const pter = document.querySelector("#pter").getElementsByTagName("input")[0];
 
+  // Seccion opcional
   const seccionOpcional = document.querySelector(
     ".ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional"
   );
 
+  // Seccion causas
+  const seccionCausas = document.querySelector(
+    ".ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional__causa"
+  );
+
+  // Inputs que activan la seccion de causas
+  const cesareasPrevias = document.querySelector("#cesareas-previas");
+  const embarazosGemelares = document.querySelector("#embarazos-gemelares");
+
+  // Selecciona todos los inputs dentro de la seccion opcional
   let seccionOpcionalInputs = [];
   let seccionOpcionalCausasInputs = [];
 
@@ -120,7 +139,7 @@ function habilitarSeccOpcionalEmbarazo(e) {
       }
     }
   }
-  console.log(seccionOpcionalCausasInputs);
+
   let activarSeccionOpcional;
 
   if (ppr.checked || pter.checked) {
@@ -129,12 +148,32 @@ function habilitarSeccOpcionalEmbarazo(e) {
     activarSeccionOpcional = false;
   }
 
+  let activarCausas;
+
+  if (cesareasPrevias.checked || embarazosGemelares.checked) {
+    activarCausas = true;
+  } else {
+    activarCausas = false;
+  }
+
   if (activarSeccionOpcional) {
     for (const i of seccionOpcionalInputs) {
       i.disabled = false;
     }
-    for (const i of seccionOpcionalCausasInputs) {
-      i.disabled = false;
+    if (activarCausas) {
+      for (const i of seccionOpcionalCausasInputs) {
+        i.disabled = false;
+      }
+      seccionCausas.classList.remove(
+        "ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional--inactive"
+      );
+    } else {
+      for (const i of seccionOpcionalCausasInputs) {
+        i.disabled = true;
+      }
+      seccionCausas.classList.add(
+        "ficha-a__antecedentes-obstetricos__form__item--embarazo-ectopico--seccion-opcional--inactive"
+      );
     }
 
     seccionOpcional.classList.remove(
