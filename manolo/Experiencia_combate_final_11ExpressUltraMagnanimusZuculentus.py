@@ -22,10 +22,16 @@ from random import randint
 # CONSTANTES:
 # En este codigo no utilice ninguna constante, ya que incluso las listas que contien los atributos fijos del heroe-
 # -cambiaran dependiendo el cual se utilice, y de la misma forma ocurre con el enemigo.
-GUERRERO = [12, 30, 5, 14, 20, 0, 0, 0, 2, 8, 0, 0, 1, 3, 1]
+GUERRERO = [12, 30, 5000, 14, 20, 0, 0, 0, 2, 8, 0, 0, 1, 3, 1]
 MAGO = [6, 2, 2, 12, 10, 20, 40, 0, 1, 4, 4, 12, 1, 4, 1]
 CLERIGO = [8, 2, 4, 12, 12, 0, 20, 40, 1, 6, 0, 0, 1, 3, 1]
 
+KOBOLD = [4, 2, 2, 12, 20, 0, 0, 4, 1, 6, 0, 0, 1, 1, 1, "KOBOLD"]
+GOBLIN = [6, 4, 1, 12, 0, 0, 0, 0, 1, 4, 0, 0, 1, 2, 1, "GOBLIN"]
+GUERRERO_ORCO = [12, 2, 5, 14, 0, 0, 0, 0,
+                 1, 8, 0, 0, 1, 3, 1, "GUERRERO_ORCO"]
+
+visualizarRonda = True
 # DEFINICION DE FUNCIONES:
 
 # Funcion introduccion:
@@ -43,8 +49,8 @@ def introduccion():
 
 def timer():
     ticks = 0
-    while ticks <= 1:
-        print(ticks, "tick")
+    while ticks <= 3:
+        #print(ticks, "tick")
         time.sleep(1)
         ticks += 1
 
@@ -55,7 +61,7 @@ def timer():
 
 
 def eleccionHeroe():
-    print("||¡Eliga su heroe para combatir al enemigo!|| \n||.-1=Guerrero, atributos:||\n||Puntos de vida=12, velocidad=3, ataque=5, defensa=14|| \n||umbralDeHechizo=20, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=2, dañoMaximo=8, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||\n||.-2=Mago, atributos:||\n||Puntos de vida=6, velocidad=2, ataque=2, defensa=12|| \n||umbralDeHechizo=10, probabilidadDeHechizoAtaque=20, probabilidadDeHechizoDefensa=40, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=1, dañoMaximo=4, dañoHechizoMinimo=4 y dañoHechizoMaximo=12||\n||.-3=Clerigo, atributos:||\n||Puntos de vida=8, velocidad=2, ataque=4, defensa=12|| \n||umbralDeHechizo=12, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=20, probabilidadDeHechizoCuracion=40|| \n||dañoMinimo=1, dañoMaximo=6, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
+    print("||¡Eliga su heroe para combatir al enemigo!|| \n\n||.-1=Guerrero, atributos:||\n||Puntos de vida=12, velocidad=3, ataque=5, defensa=14|| \n||umbralDeHechizo=20, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=2, dañoMaximo=8, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||\n\n||.-2=Mago, atributos:||\n||Puntos de vida=6, velocidad=2, ataque=2, defensa=12|| \n||umbralDeHechizo=10, probabilidadDeHechizoAtaque=20, probabilidadDeHechizoDefensa=40, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=1, dañoMaximo=4, dañoHechizoMinimo=4 y dañoHechizoMaximo=12||\n\n||.-3=Clerigo, atributos:||\n||Puntos de vida=8, velocidad=2, ataque=4, defensa=12|| \n||umbralDeHechizo=12, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=20, probabilidadDeHechizoCuracion=40|| \n||dañoMinimo=1, dañoMaximo=6, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
     continuar = True
     while continuar:
         eleccionHeroe = input("Eleccion: ")
@@ -89,20 +95,23 @@ def eleccionEnemigo():
         numEnemigo = len(listaEnemigos)+1
         eleccionEnemigo = randint(1, 3)
         if eleccionEnemigo == 1:
-            print("El enemigo numero", numEnemigo, "elegido por la computadora es un: Kobold, y sus atributos en nivel 1 son:\n||Puntos de vida=4, velocidad=2, ataque=2, defensa=12|| \n||umbralDeHechizo=20, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=4|| \n||dañoMinimo=1, dañoMaximo=6, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
-            enemigo1 = [4, 2, 2, 12, 20, 0, 0, 4, 1, 6, 0, 0, 1, 1, 1]
-            enemigo1.append("KOBOLD")
-            listaEnemigos.append(enemigo1)
-        if eleccionEnemigo == 2:
-            print("El enemigo numero", numEnemigo, "elegido por la computadora es un: Goblin, y sus atributos en nivel 1 son:\n||Puntos de vida=6, velocidad=4, ataque=1, defensa=12|| \n||umbralDeHechizo=0, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=1, dañoMaximo=4, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
-            enemigo2 = [6, 4, 1, 12, 0, 0, 0, 0, 1, 4, 0, 0, 1, 2, 1]
-            enemigo2.append("GOBLIN")
-            listaEnemigos.append(enemigo2)
-        if eleccionEnemigo == 3:
-            print("El enemigo numero", numEnemigo, "elegido por la computadora es un: Guerrero orco, y sus atributos en nivel 1 son:\n||Puntos de vida=12, velocidad=2, ataque=5, defensa=14|| \n||umbralDeHechizo=0, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=1, dañoMaximo=8, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
-            enemigo3 = [12, 2, 5, 14, 0, 0, 0, 0, 1, 8, 0, 0, 1, 3, 1]
-            enemigo3.append("GUERRERO ORCO")
-            listaEnemigos.append(enemigo3)
+            print("El enemigo numero", numEnemigo,
+                  "elegido por la computadora es un Kobold")
+            #print("El enemigo numero", numEnemigo, "elegido por la computadora es un: Kobold, y sus atributos en nivel 1 son:\n||Puntos de vida=4, velocidad=2, ataque=2, defensa=12|| \n||umbralDeHechizo=20, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=4|| \n||dañoMinimo=1, dañoMaximo=6, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
+            enemigo = KOBOLD[:]
+            listaEnemigos.append(enemigo)
+        elif eleccionEnemigo == 2:
+            print("El enemigo numero", numEnemigo,
+                  "elegido por la computadora es un Goblin")
+            #print("El enemigo numero", numEnemigo, "elegido por la computadora es un: Goblin, y sus atributos en nivel 1 son:\n||Puntos de vida=6, velocidad=4, ataque=1, defensa=12|| \n||umbralDeHechizo=0, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=1, dañoMaximo=4, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
+            enemigo = GOBLIN[:]
+            listaEnemigos.append(enemigo)
+        elif eleccionEnemigo == 3:
+            print("El enemigo numero", numEnemigo,
+                  "elegido por la computadora es un Guerrero Orco")
+            #print("El enemigo numero", numEnemigo, "elegido por la computadora es un: Guerrero orco, y sus atributos en nivel 1 son:\n||Puntos de vida=12, velocidad=2, ataque=5, defensa=14|| \n||umbralDeHechizo=0, probabilidadDeHechizoAtaque=0, probabilidadDeHechizoDefensa=0, probabilidadDeHechizoCuracion=0|| \n||dañoMinimo=1, dañoMaximo=8, dañoHechizoMinimo=0 y dañoHechizoMaximo=0||")
+            enemigo = GUERRERO_ORCO[:]
+            listaEnemigos.append(enemigo)
     return listaEnemigos
 
 # Funcion checkearFincombate:
@@ -128,9 +137,10 @@ def checkearVidaEnemigos(listaGauges, enemigos, heroe):
         if enemigos[i][0] <= 0:
             if (listaGauges[i+1] != "derrotado"):
                 listaGauges[i+1] = "derrotado"
-                print(
-                    "El enemigo", enemigos[i][15], "ha muerto, quedando fuera de la ronda...")
-                time.sleep(2)
+                if visualizarRonda:
+                    print(
+                        "El enemigo", enemigos[i][15], "ha muerto, quedando fuera de la ronda...")
+                    time.sleep(2)
         i += 1
 
     enemigosVivos = True
@@ -206,18 +216,25 @@ def balanceoNiveles(heroe, listaEnemigos):
 
 
 def cargaGauges(listaGauges, heroe, balanceEnemigos):
-    print("---------------------")
+    global visualizarRonda
+
+    if visualizarRonda:
+        print("---------------------")
+
     listaGauges[0] += heroe[1]
-    print("Barra de accion HEROE nivel",
-          heroe[12], ":", "⬛"*listaGauges[0], listaGauges[0])
+    if visualizarRonda:
+        print("Barra de accion HEROE nivel",
+              heroe[12], ":", "⬛"*listaGauges[0], listaGauges[0])
     i = 1
     while i < len(listaGauges):
         if listaGauges[i] != "derrotado":
             listaGauges[i] = listaGauges[i]+balanceEnemigos[i-1][1]
-            print("Barra de accion enemigo", i, ":", balanceEnemigos[i-1][15], "nivel", balanceEnemigos[i-1][12], "Es: ", "⬛"*listaGauges[i],
-                  listaGauges[i])
+            if visualizarRonda:
+                print("Barra de accion enemigo", i, ":", balanceEnemigos[i-1][15], "nivel", balanceEnemigos[i-1][12], "Es: ", "⬛"*listaGauges[i],
+                      listaGauges[i])
         i = i+1
-    print("---------------------")
+    if visualizarRonda:
+        print("---------------------")
 
     return listaGauges
 
@@ -232,118 +249,156 @@ def ataqueHeroe(heroe, enemigo):
     defensaEnemigo = enemigo[3]
     probHechizoHeroe = randint(1, 100)
     numeroHechizo = randint(1, 20)
+
     if probHechizoHeroe <= heroe[5] and numeroHechizo >= heroe[4]:
         numeroHechizo2 = randint(1, 20)
         if numeroHechizo2 >= enemigo[3]:
             if numeroHechizo2 == 20:
-                print("¡¡El HEROE LANZA UN ATAQUE MAGICO CRITICO!!")
+                if visualizarRonda:
+                    print("¡¡El HEROE LANZA UN ATAQUE MAGICO CRITICO!!")
                 dañoHechizo = (randint(heroe[10], heroe[11]))*1.5
-                print("El daño causado por el hechizo es", dañoHechizo)
+                if visualizarRonda:
+                    print("El daño causado por el hechizo es", dañoHechizo)
                 vidaEnemigo -= dañoHechizo
-                print(
-                    "El ataque del HEROE disminuye la vida del enemigo", enemigo[15], "a:", vidaEnemigo)
+                if visualizarRonda:
+                    print(
+                        "El ataque del HEROE disminuye la vida del enemigo", enemigo[15], "a:", vidaEnemigo)
                 contadorCriticos += 1
             elif numeroHechizo2 == 1:
-                print("EL ATAQUE MAGICO HA FALLADO")
+                if visualizarRonda:
+                    print("EL ATAQUE MAGICO HA FALLADO")
                 dañoPropio = randint(1, 3)
-                print("El HEROE se causa daño a si mismo de:",
-                      dañoPropio, "puntos")
+                if visualizarRonda:
+                    print("El HEROE se causa daño a si mismo de:",
+                          dañoPropio, "puntos")
                 vidaHeroe -= dañoPropio
-                print("La vida del HEROE baja a:", vidaHeroe)
+                if visualizarRonda:
+                    print("La vida del HEROE baja a:", vidaHeroe)
                 contadorFallos += 1
             elif numeroHechizo2 >= enemigo[3] and numeroHechizo2 != 20 and numeroHechizo2 != 1:
                 daño = randint(heroe[10], heroe[11])
-                print("El HEROE realiza un hechizo de ataque magico normal")
+                if visualizarRonda:
+                    print("El HEROE realiza un hechizo de ataque magico normal")
                 vidaEnemigo -= daño
-                print("El hechizo causa:", daño, "puntos de daño",
-                      "dejando la vida del enemigo", enemigo[15], "en:", vidaEnemigo)
+                if visualizarRonda:
+                    print("El hechizo causa:", daño, "puntos de daño",
+                          "dejando la vida del enemigo", enemigo[15], "en:", vidaEnemigo)
         else:
-            print(
-                "El ataque magico no ha surtido efecto debido a la defensa del oponente")
+            if visualizarRonda:
+                print(
+                    "El ataque magico no ha surtido efecto debido a la defensa del oponente")
 
     elif probHechizoHeroe <= heroe[5] and not numeroHechizo >= heroe[4]:
-        print("El hechizo no ha podido lanzarse debido a que no se ha superado el umbral de hechizo")
+        if visualizarRonda:
+            print(
+                "El hechizo no ha podido lanzarse debido a que no se ha superado el umbral de hechizo")
 
     elif heroe[5] < probHechizoHeroe <= heroe[6] and numeroHechizo >= heroe[4]:
         numeroHechizo2 = randint(1, 20)
         if numeroHechizo2 == 20:
-            print("EL HEROE LANZA UN HECHIZO DE DEFENSA CRITICO!!")
+            if visualizarRonda:
+                print("EL HEROE LANZA UN HECHIZO DE DEFENSA CRITICO!!")
             defensaHeroe += 2
-            print(
-                "como resultado, el HEROE aumenta su defensa en 2, dejando su defensa en:", defensaHeroe)
+            if visualizarRonda:
+                print(
+                    "como resultado, el HEROE aumenta su defensa en 2, dejando su defensa en:", defensaHeroe)
             contadorCriticos += 1
         elif numeroHechizo2 == 1:
-            print("EL HECHIZO DE DEFENSA HA FALLADO")
+            if visualizarRonda:
+                print("EL HECHIZO DE DEFENSA HA FALLADO")
             defensaEnemigo += 1
-            print("como resultado, aumenta en 1 la defensa del enemigo",
-                  enemigo[15])
-            print("la defensa del ENEMIGO aumenta a:", defensaEnemigo)
+            if visualizarRonda:
+                print("como resultado, aumenta en 1 la defensa del enemigo",
+                      enemigo[15])
+                print("la defensa del ENEMIGO aumenta a:", defensaEnemigo)
             contadorFallos += 1
         elif numeroHechizo2 != 20 and numeroHechizo != 1:
-            print("Heroe lanza hechizo de defensa")
+            if visualizarRonda:
+                print("Heroe lanza hechizo de defensa")
             defensaHeroe += 1
-            print("La defensa del HEROE aumenta en 1, quedando en:", defensaHeroe)
+            if visualizarRonda:
+                print("La defensa del HEROE aumenta en 1, quedando en:", defensaHeroe)
     elif heroe[5] < probHechizoHeroe <= heroe[6] and not numeroHechizo >= heroe[4]:
-        print("El hechizo no ha podido lanzarse debido a que no se ha superado el umbral de hechizo")
+        if visualizarRonda:
+            print(
+                "El hechizo no ha podido lanzarse debido a que no se ha superado el umbral de hechizo")
 
     elif heroe[6] < probHechizoHeroe <= heroe[7] and numeroHechizo >= heroe[4]:
         numeroHechizo2 = randint(1, 20)
         if numeroHechizo2 == 20:
-            print("EL HEROE LANZA UN HECHIZO DE CURACION CRITICO!!")
+            if visualizarRonda:
+                print("EL HEROE LANZA UN HECHIZO DE CURACION CRITICO!!")
             vidaHeroe += 4
             if vidaHeroe > heroe[0]:
                 vidaHeroe = heroe[0]
-            print("como resultado, el HEROE aumenta su vida en 4 puntos")
-            print("la vida actual del HEROE queda en:", vidaHeroe)
+            if visualizarRonda:
+                print("como resultado, el HEROE aumenta su vida en 4 puntos")
+                print("la vida actual del HEROE queda en:", vidaHeroe)
             contadorCriticos += 1
         elif numeroHechizo2 == 1:
-            print("EL HECHIZO DE CURACION HA FALLADO")
+            if visualizarRonda:
+                print("EL HECHIZO DE CURACION HA FALLADO")
             vidaEnemigo += 4
             if vidaEnemigo > enemigo[0]:
                 vidaEnemigo = enemigo[0]
-            print("como consecuencia, el HEROE aumenta la vida del enemigo",
-                  enemigo[15], "en 4 puntos")
-            print("la vida del enemigo es:", vidaEnemigo)
+            if visualizarRonda:
+                print("como consecuencia, el HEROE aumenta la vida del enemigo",
+                      enemigo[15], "en 4 puntos")
+                print("la vida del enemigo es:", vidaEnemigo)
             contadorFallos += 1
         elif numeroHechizo2 != 20 and numeroHechizo2 != 1:
-            print("El HEROE lanza hechizo de curacion normal")
+            if visualizarRonda:
+                print("El HEROE lanza hechizo de curacion normal")
             numeroCuracion = randint(1, 8)
             vidaHeroe += numeroCuracion
             if vidaHeroe > heroe[0]:
                 vidaHeroe = heroe[0]
-            print("Como resultado la vida del HEROE aumenta en:",
-                  numeroCuracion, "quedando su vida en:", vidaHeroe)
+            if visualizarRonda:
+                print("Como resultado la vida del HEROE aumenta en:",
+                      numeroCuracion, "quedando su vida en:", vidaHeroe)
     elif heroe[6] < probHechizoHeroe <= heroe[7] and not numeroHechizo >= heroe[4]:
-        print("El hechizo no ha podido lanzarse debido a que no se ha superado el umbral de hechizo")
+        if visualizarRonda:
+            print(
+                "El hechizo no ha podido lanzarse debido a que no se ha superado el umbral de hechizo")
 
     elif probHechizoHeroe > heroe[7] and probHechizoHeroe <= 100:
         numeroAtaque = randint(1, 20)
         ataqueFisico = heroe[2]+numeroAtaque
-        print("El HEROE se avalanza para realizar un ataque físico")
+        if visualizarRonda:
+            print("El HEROE se avalanza para realizar un ataque físico")
         if ataqueFisico >= enemigo[3]:
             if numeroAtaque == 20:
-                print("El HEROE RELIZA UN ATAQUE FÍSICO DESGARRADOR, GOLPE CRITICO!!")
+                if visualizarRonda:
+                    print(
+                        "El HEROE RELIZA UN ATAQUE FÍSICO DESGARRADOR, GOLPE CRITICO!!")
                 daño = (randint(heroe[8], heroe[9]))*2
                 vidaEnemigo -= daño
-                print("El HEROE quita", daño,
-                      "puntos de vida al enemigo", enemigo[15], "dejando su vida en:", vidaEnemigo)
+                if visualizarRonda:
+                    print("El HEROE quita", daño,
+                          "puntos de vida al enemigo", enemigo[15], "dejando su vida en:", vidaEnemigo)
                 contadorCriticos += 1
             elif numeroAtaque == 1:
-                print("EL GOLPE HA FALLADO")
+                if visualizarRonda:
+                    print("EL GOLPE HA FALLADO")
                 dañoPropio = randint(1, 3)
-                print("Como resultado, el HEROE hace",
-                      dañoPropio, "puntos de daño a sí mismo")
+                if visualizarRonda:
+                    print("Como resultado, el HEROE hace",
+                          dañoPropio, "puntos de daño a sí mismo")
                 vidaHeroe -= dañoPropio
-                print("La vida del HEROE queda en:", vidaHeroe)
+                if visualizarRonda:
+                    print("La vida del HEROE queda en:", vidaHeroe)
                 contadorFallos += 1
             elif ataqueFisico >= enemigo[3] and numeroAtaque != 20 and numeroAtaque != 1:
-                print("El HEROE realiza un ataque fisico normal")
+                if visualizarRonda:
+                    print("El HEROE realiza un ataque fisico normal")
                 daño = randint(heroe[8], heroe[9])
                 vidaEnemigo -= daño
-                print("El ataque del HEROE hace", daño,
-                      "puntos de daño sobre el enemigo", enemigo[15], "dejando su vida en:", vidaEnemigo)
+                if visualizarRonda:
+                    print("El ataque del HEROE hace", daño,
+                          "puntos de daño sobre el enemigo", enemigo[15], "dejando su vida en:", vidaEnemigo)
         else:
-            print("El ataque no ha surtido efecto debido a la defensa del oponente")
+            if visualizarRonda:
+                print("El ataque no ha surtido efecto debido a la defensa del oponente")
 
     enemigo[0] = vidaEnemigo
     heroe[0] = vidaHeroe
@@ -566,7 +621,8 @@ def ataqueYGauges(listaGauges, enemigos, heroe):
         if gauges[i] != "derrotado":
             if gauges[i] >= 10:
                 if i == 0:
-                    print("HEROE realiza su accion")
+                    if visualizarRonda:
+                        print("HEROE realiza su accion")
                     enemigo = randint(0, len(enemigos)-1)
                     while listaGauges[enemigo+1] == "derrotado":
                         enemigo = randint(0, len(enemigos)-1)
@@ -580,21 +636,45 @@ def ataqueYGauges(listaGauges, enemigos, heroe):
                     vidaEnemigos = checkearVidaEnemigos(
                         gauges[:], listaEnemigos[:], heroe[:])
                     gauges = vidaEnemigos[0]
-
-                    time.sleep(3)
+                    if visualizarRonda:
+                        time.sleep(3)
                 else:
-                    print("El enemigo",
-                          listaEnemigos[i-1][15], "realiza su accion")
+                    if visualizarRonda:
+                        print("El enemigo",
+                              listaEnemigos[i-1][15], "realiza su accion")
                     ataqueE = ataqueEnemigo(listaHeroe[:], listaEnemigos[i-1])
                     listaEnemigos[i-1] = ataqueE[1]
                     listaHeroe = ataqueE[0]
                     gauges[i] = 0
                     if listaHeroe[0] <= 0:
                         i = 10
-                    time.sleep(3)
+                    if visualizarRonda:
+                        time.sleep(3)
         i = i+1
 
     return [gauges, listaEnemigos, listaHeroe, criticosYFallos]
+
+
+def elejirVisualizar():
+    global visualizarRonda
+
+    print('Ingrese "1" para visualizar la ronda, o "2" para ir directamente a los resultados.')
+    continuar = True
+    while continuar:
+        visualizar = input("Eleccion: ")
+        if not visualizar.isdigit():
+            print("Error. Por favor ingrese un numero valido. ")
+        elif int(visualizar) < 1 or int(visualizar) > 2:
+            print("Error. Por favor ingrese un numero entre 1 y 2. ")
+        else:
+            continuar = False
+    visualizar = int(visualizar)
+
+    if visualizar == 1:
+        visualizarRonda = True
+    else:
+        visualizarRonda = False
+
 # Funcion combate:
 # Funcion que genera el flujo del combate, añadiendo intervalos de tiempo y turnos de ataque.
 # Entrada: listas de enteros, una con los atributos del Heroe y otra con los del enemigo.
@@ -621,6 +701,8 @@ def combate(heroe, balanceEnemigos):
 
     i = 0
 
+    elejirVisualizar()
+
     while heroe[0] > 0 and enemigosVivos:
         listaGauges = cargaGauges(
             listaGauges, heroe, balanceEnemigos)
@@ -644,7 +726,7 @@ def combate(heroe, balanceEnemigos):
 
     if heroe[0] <= 0:
         print("El heroe ha muerto.")
-    if enemigosVivos == False:
+    elif enemigosVivos == False:
         print("El heroe ha derrotado a todos los enemigos.")
         vida = [estadisticasIniciales[0], heroe[0]]
         print(vida)
@@ -657,13 +739,14 @@ def combate(heroe, balanceEnemigos):
         cambioEstadisticasH = evolucionAtributosH(estadisticasIniciales, xp)
         heroe = cambioEstadisticasH
         print(heroe)
-        return(heroe)
+
+    return(heroe)
 
 
 def juegazo(heroe):
     continuar = True
     while continuar:
-        numeroRondas = input("ingrese el numero de rondas: ")
+        numeroRondas = input("Ingrese el numero de rondas: ")
         if not numeroRondas.isdigit():
             print("Error. Por favor ingrese un numero valido. ")
         elif int(numeroRondas) < 1:
