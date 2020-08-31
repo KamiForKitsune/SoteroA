@@ -213,9 +213,12 @@ def balanceoNiveles(heroe, listaEnemigos):
             nivelMinimo = int((nivelHeroe - 3) / len(listaEnemigos))
             if nivelMinimo < 1:
                 nivelMinimo = 1
-
-            listaEnemigos[i][12] = randint(
-                nivelMinimo, int((nivelHeroe+3)/(len(listaEnemigos))))
+            if heroe[12] < 97:
+                listaEnemigos[i][12] = randint(
+                    nivelMinimo, int((nivelHeroe+3)/(len(listaEnemigos))))
+            else:
+                listaEnemigos[i][12] = randint(
+                    nivelMinimo, int((nivelHeroe)/(len(listaEnemigos))))
         i = i+1
 
     z = 0
@@ -872,8 +875,11 @@ def combate(heroe, balanceEnemigos):
         time.sleep(2)
         print(heroe)
 
-        cambioEstadisticasH = evolucionAtributosH(estadisticasIniciales, xp)
-        heroe = cambioEstadisticasH
+        if heroe[12] < 100:
+            cambioEstadisticasH = evolucionAtributosH(
+                estadisticasIniciales, xp)
+            heroe = cambioEstadisticasH
+
         print(heroe)
 
     return(heroe, continuar)
